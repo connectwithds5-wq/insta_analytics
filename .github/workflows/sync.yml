@@ -23,7 +23,7 @@ jobs:
           INSTAGRAM_USER_ID: ${{ secrets.INSTAGRAM_USER_ID }}
           META_API_VERSION: ${{ secrets.META_API_VERSION || 'v23.0' }}
           DB_PATH: instagram_analytics.db
-        run: python -c "from app import init_db, fetch_and_store; init_db(); print('Synced', fetch_and_store(), 'media items')"
+        run: python sync.py
       - name: Persist database
         run: |
           git config user.name 'github-actions[bot]'
