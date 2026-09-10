@@ -1,0 +1,18 @@
+{
+  "generated_at": "2026-09-10T00:00:00Z",
+  "model": "cold-start trend ranking",
+  "sample": {"sample_size": 0, "best_hours": [], "best_days": [], "top_captions": [], "baseline_reach": 0, "baseline_views": 0, "baseline_engagement": 0},
+  "primary_recommendation": {
+    "song": "KALYANI (with Shreya Ghoshal) - Remix",
+    "artist": "ARJN, KDS, FIFTY4, Shreya Ghoshal",
+    "why": "Cold-start recommendation from the current India/Hindi trend seed. It will be replaced by account-aware scoring after the next sync.",
+    "reel_format": "emotional story",
+    "hook": "0–1 sec: एक ऐसी line जो viewer को अपनी कहानी लगे",
+    "structure": ["0–2s hook", "2–6s relatable setup", "6–10s emotional turn", "10–13s payoff", "13–15s loop/CTA"],
+    "posting_hour_local": 20,
+    "audio_note": "Confirm the official Instagram audio is available/licensed for your account before publishing."
+  },
+  "trending_audio_ranked": [],
+  "experiments": [],
+  "rules": {"reach_priority":"shares + reach + views, not likes alone", "trend_guard":"trending audio is a discovery signal, not a guarantee of reach"}
+}
