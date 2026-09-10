@@ -1,11 +1,11 @@
 import os
 import sqlite3
+from datetime import datetime, timezone
 from pathlib import Path
 import requests
 
 DB_PATH = Path(os.getenv('DB_PATH', 'instagram_analytics.db'))
 API_VERSION = os.getenv('META_API_VERSION', 'v23.0')
-# Instagram Login tokens use graph.instagram.com.
 GRAPH_URL = f'https://graph.instagram.com/{API_VERSION}'
 
 
@@ -40,6 +40,19 @@ def main():
     if not token or not user_id:
         raise SystemExit('Missing INSTAGRAM_ACCESS_TOKEN or INSTAGRAM_USER_ID')
     con = sqlite3.connect(DB_PATH); init_db(con)
+    now = datetime.now(timezone.utc).isoformat()
+
+    # Profile fields are best-effort because Meta exposes them differently by API/account setup.
+    try:
+        profile = api_get(user_id, {
+            'fields': 'id,username,followers_count,follows_count,media_count',
+            'access_token': token
+        })
+        con.execute('INSERT INTO profile_snapshots(captured_at,followers,follows,media_count) VALUES(?,?,?,?)',
+                    (now, profile.get('followers_count'), profile.get('follows_count'), profile.get('media_count')))
+    except RuntimeError as exc:
+        print(f'Profile snapshot unavailable: {exc}')
+
     fields = 'id,caption,media_type,media_product_type,permalink,timestamp,like_count,comments_count'
     media = api_get(f'{user_id}/media', {'fields': fields, 'limit': 100, 'access_token': token}).get('data', [])
     for item in media:
@@ -47,8 +60,8 @@ def main():
         try:
             ins = api_get(f"{item['id']}/insights", {'metric':'reach,likes,comments,shares,saved,views,total_interactions','access_token':token})
             metrics = {x['name']: x.get('values',[{}])[-1].get('value',0) for x in ins.get('data',[])}
-        except RuntimeError:
-            pass
+        except RuntimeError as exc:
+            print(f"Insights unavailable for {item.get('id')}: {exc}")
         con.execute('''INSERT INTO reels VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)
           ON CONFLICT(id) DO UPDATE SET caption=excluded.caption, permalink=excluded.permalink,
           published_at=excluded.published_at, views=excluded.views, reach=excluded.reach,
