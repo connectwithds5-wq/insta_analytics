@@ -1,0 +1,23 @@
+{
+  "updated_at": "2026-09-10",
+  "region": "India",
+  "sources": [
+    "https://buffer.com/resources/trending-audio-instagram/",
+    "https://soundmatcha.com/trending/",
+    "https://instagram-trending.snaplytics.io/"
+  ],
+  "tracks": [
+    {"rank":1,"title":"KALYANI (with Shreya Ghoshal) - Remix","artist":"ARJN, KDS, FIFTY4, Shreya Ghoshal","lane":"Hindi/Indian","formats":["emotional story","cinematic text","romantic reveal"],"trend_score":95},
+    {"rank":2,"title":"Aarzu","artist":"Noor, Khan, Madhurxo","lane":"Hindi/Indian","formats":["romantic story","sad story","POV"],"trend_score":93},
+    {"rank":3,"title":"Majboor","artist":"Sheheryar Rehan, Zoha Waseem","lane":"Hindi/Indian","formats":["emotional twist","breakup","relatable text"],"trend_score":92},
+    {"rank":4,"title":"Bairan","artist":"Banjaare","lane":"Hindi/Indian","formats":["relationship POV","slow cinematic","story reveal"],"trend_score":90},
+    {"rank":5,"title":"Barsaat","artist":"Banjaare, Roni","lane":"Hindi/Indian","formats":["rain mood","nostalgia","love story"],"trend_score":89},
+    {"rank":6,"title":"Gehra Hua","artist":"Shashwat Sachdev, Arijit Singh","lane":"Hindi/Indian","formats":["deep emotion","memory","cinematic"],"trend_score":88},
+    {"rank":7,"title":"Ring My Bell","artist":"Anita Ward","lane":"Global","formats":["quick reveal","playful transition","lifestyle"],"trend_score":87},
+    {"rank":8,"title":"Less Than a Lover","artist":"JENNIE","lane":"Global","formats":["dreamy aesthetic","romantic","soft cinematic"],"trend_score":86},
+    {"rank":9,"title":"Timber","artist":"Pitbull feat. Kesha","lane":"Global","formats":["fast cuts","transition","high energy"],"trend_score":84},
+    {"rank":10,"title":"Beautiful Things","artist":"Benson Boone","lane":"Global","formats":["emotional reveal","relationship","storytime"],"trend_score":83},
+    {"rank":11,"title":"Die With A Smile","artist":"Lady Gaga & Bruno Mars","lane":"Global","formats":["romantic story","nostalgia","emotional"],"trend_score":82},
+    {"rank":12,"title":"APT.","artist":"ROSÉ & Bruno Mars","lane":"Global","formats":["fast cuts","fun POV","transition"],"trend_score":81}
+  ]
+}
