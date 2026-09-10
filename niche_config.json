@@ -1,0 +1,12 @@
+{
+  "mode": "retro_bollywood",
+  "name": "Old Hindi Bollywood / Retro Nostalgia",
+  "description": "Old Hindi Bollywood songs, especially evergreen 70s/80s/90s/early-2000s emotional, romantic, heartbreak and nostalgia reels.",
+  "allowed_eras": ["1960s", "1970s", "1980s", "1990s", "2000s"],
+  "preferred_lanes": ["Retro Bollywood"],
+  "preferred_formats": ["nostalgia", "emotional story", "romantic story", "heartbreak", "POV", "cinematic text", "lyrics", "memory", "relatable"],
+  "hard_exclude_new_releases": true,
+  "new_song_exception": "Only allow a new release when it is explicitly a remix/revival of an old Bollywood song and the recommendation is labelled as a retro crossover.",
+  "account_signal_terms": ["old bollywood", "old songs", "oldisgold", "90s", "80s", "70s", "retro", "evergreen", "nostalgia", "purane gane", "puranegane", "sadabahar", "90s bollywood", "old hindi songs", "old melodies"],
+  "default_strategy": "Niche fit first, account performance second, current discovery signal third."
+}
