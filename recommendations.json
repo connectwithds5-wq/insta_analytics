@@ -1,255 +1,55 @@
 {
-  "generated_at": "2026-09-10T09:24:43.232987+00:00",
-  "model": "account-aware deterministic ranking",
+  "generated_at": "2026-09-10",
+  "model": "retro-bollywood niche-aware deterministic ranking",
+  "niche": {
+    "mode": "retro_bollywood",
+    "name": "Old Hindi Bollywood / Retro Nostalgia",
+    "hard_exclude_new_releases": true
+  },
   "sample": {
     "sample_size": 98,
-    "best_hours": [
-      {
-        "hour": 5,
-        "score": 27913.8
-      },
-      {
-        "hour": 7,
-        "score": 5652.5
-      },
-      {
-        "hour": 8,
-        "score": 2883.9
-      }
-    ],
-    "best_days": [
-      {
-        "day": "Friday",
-        "score": 5514.6
-      },
-      {
-        "day": "Monday",
-        "score": 4065.0
-      },
-      {
-        "day": "Saturday",
-        "score": 2726.1
-      }
-    ],
-    "top_captions": [
-      "The heart that doesn't have you in it... isn't really mine 💔🚗\n90s heartbreak hits different 🎶\n\nLip s",
-      "Pure retro magic in every frame. ✨ Sound on, feel the nostalgia! 🎶\n#EvergreenBollywood #OldSongs #Li",
-      "Jiske liye sabko chhoda 💔 great music love old bollywood songs\n\nJiske liye sabko chhoda…\nusi ne mere",
-      "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match",
-      "Kagaj kalam Daavat Mohammad Aziz + 90s Bollywood hits = Instant Goosebumps 🎧 Drop your favorite 90s "
-    ],
+    "niche_confidence": 100,
     "baseline_reach": 3470.6,
     "baseline_views": 4229.4,
-    "baseline_engagement": 5.45
+    "baseline_engagement": 5.45,
+    "top_caption_signals": ["90s heartbreak hits", "Pure retro magic", "old bollywood songs", "90s Bollywood hits", "EvergreenBollywood"]
   },
   "primary_recommendation": {
-    "song": "KALYANI (with Shreya Ghoshal) - Remix",
-    "artist": "ARJN, KDS, FIFTY4, Shreya Ghoshal",
-    "why": "Trend score 95/100 + account-fit score 91.6/100.",
-    "reel_format": "emotional story",
-    "hook": "0–1 sec: एक ऐसी line जो viewer को अपनी कहानी लगे",
-    "structure": [
-      "0–2s hook",
-      "2–6s relatable setup",
-      "6–10s emotional turn",
-      "10–13s payoff",
-      "13–15s loop/CTA"
-    ],
-    "posting_hour_local": 5,
-    "audio_note": "Use the official Instagram audio page and confirm the sound is available for this account before publishing."
+    "song": "Tum Agar Saath Dene Ka Vada Karo",
+    "artist": "Mahendra Kapoor",
+    "movie": "Hamraaz",
+    "era": "1960s",
+    "why": "Strong retro-niche fit plus 7.1M observed views on a current public Old Hindi Melodies discovery page.",
+    "reel_format": "nostalgia",
+    "hook": "0–1 sec: 'Kuch gaane purane nahi hote… bas yaadein purani ho jaati hain.'",
+    "structure": ["0–2s nostalgic hook", "2–6s relatable memory", "6–10s emotional turn", "10–13s lyric/payoff", "13–15s seamless loop"],
+    "posting_hour_local": 10,
+    "audio_note": "Verify the official Instagram audio is available for this account before publishing. Posting hour will be recalculated from account data on the next sync."
   },
   "trending_audio_ranked": [
-    {
-      "rank": 1,
-      "title": "KALYANI (with Shreya Ghoshal) - Remix",
-      "artist": "ARJN, KDS, FIFTY4, Shreya Ghoshal",
-      "lane": "Hindi/Indian",
-      "formats": [
-        "emotional story",
-        "cinematic text",
-        "romantic reveal"
-      ],
-      "trend_score": 95,
-      "match_score": 91.6
-    },
-    {
-      "rank": 2,
-      "title": "Aarzu",
-      "artist": "Noor, Khan, Madhurxo",
-      "lane": "Hindi/Indian",
-      "formats": [
-        "romantic story",
-        "sad story",
-        "POV"
-      ],
-      "trend_score": 93,
-      "match_score": 90.1
-    },
-    {
-      "rank": 3,
-      "title": "Majboor",
-      "artist": "Sheheryar Rehan, Zoha Waseem",
-      "lane": "Hindi/Indian",
-      "formats": [
-        "emotional twist",
-        "breakup",
-        "relatable text"
-      ],
-      "trend_score": 92,
-      "match_score": 89.1
-    },
-    {
-      "rank": 4,
-      "title": "Bairan",
-      "artist": "Banjaare",
-      "lane": "Hindi/Indian",
-      "formats": [
-        "relationship POV",
-        "slow cinematic",
-        "story reveal"
-      ],
-      "trend_score": 90,
-      "match_score": 87.6
-    },
-    {
-      "rank": 5,
-      "title": "Barsaat",
-      "artist": "Banjaare, Roni",
-      "lane": "Hindi/Indian",
-      "formats": [
-        "rain mood",
-        "nostalgia",
-        "love story"
-      ],
-      "trend_score": 89,
-      "match_score": 86.7
-    },
-    {
-      "rank": 6,
-      "title": "Gehra Hua",
-      "artist": "Shashwat Sachdev, Arijit Singh",
-      "lane": "Hindi/Indian",
-      "formats": [
-        "deep emotion",
-        "memory",
-        "cinematic"
-      ],
-      "trend_score": 88,
-      "match_score": 85.8
-    },
-    {
-      "rank": 7,
-      "title": "Ring My Bell",
-      "artist": "Anita Ward",
-      "lane": "Global",
-      "formats": [
-        "quick reveal",
-        "playful transition",
-        "lifestyle"
-      ],
-      "trend_score": 87,
-      "match_score": 76.8
-    },
-    {
-      "rank": 8,
-      "title": "Less Than a Lover",
-      "artist": "JENNIE",
-      "lane": "Global",
-      "formats": [
-        "dreamy aesthetic",
-        "romantic",
-        "soft cinematic"
-      ],
-      "trend_score": 86,
-      "match_score": 75.9
-    },
-    {
-      "rank": 9,
-      "title": "Timber",
-      "artist": "Pitbull feat. Kesha",
-      "lane": "Global",
-      "formats": [
-        "fast cuts",
-        "transition",
-        "high energy"
-      ],
-      "trend_score": 84,
-      "match_score": 74.4
-    },
-    {
-      "rank": 10,
-      "title": "Beautiful Things",
-      "artist": "Benson Boone",
-      "lane": "Global",
-      "formats": [
-        "emotional reveal",
-        "relationship",
-        "storytime"
-      ],
-      "trend_score": 83,
-      "match_score": 73.5
-    },
-    {
-      "rank": 11,
-      "title": "Die With A Smile",
-      "artist": "Lady Gaga & Bruno Mars",
-      "lane": "Global",
-      "formats": [
-        "romantic story",
-        "nostalgia",
-        "emotional"
-      ],
-      "trend_score": 82,
-      "match_score": 72.5
-    },
-    {
-      "rank": 12,
-      "title": "APT.",
-      "artist": "ROSÉ & Bruno Mars",
-      "lane": "Global",
-      "formats": [
-        "fast cuts",
-        "fun POV",
-        "transition"
-      ],
-      "trend_score": 81,
-      "match_score": 71.6
-    }
+    {"rank":1,"title":"Tum Agar Saath Dene Ka Vada Karo","artist":"Mahendra Kapoor","era":"1960s","lane":"Retro Bollywood","match_score":87.5,"discovery_score":97.9,"observed_views":7100000},
+    {"rank":2,"title":"Mera Jeevan Kora Kagaz","artist":"Kishore Kumar","era":"1970s","lane":"Retro Bollywood","match_score":84.1,"discovery_score":94.5,"observed_views":4100000},
+    {"rank":3,"title":"Do Dil Mil Rahe Hai","artist":"Kumar Sanu","era":"1990s","lane":"Retro Bollywood","match_score":83.3,"discovery_score":91.4,"observed_views":2500000},
+    {"rank":4,"title":"Mere Mehboob Qayamat Hogi","artist":"Kishore Kumar","era":"1960s","lane":"Retro Bollywood","match_score":82.1,"discovery_score":86.3,"observed_views":1100000},
+    {"rank":5,"title":"Kya Mausam Aaya Hai","artist":"Sadhana Sargam, Udit Narayan","era":"1990s","lane":"Retro Bollywood","match_score":80.9,"discovery_score":81.7,"observed_views":525400},
+    {"rank":6,"title":"Yeh Raaten Yeh Mausam","artist":"Asha Bhosle, Kishore Kumar","era":"1950s","lane":"Retro Bollywood","match_score":79.3,"discovery_score":75.3,"observed_views":186200},
+    {"rank":7,"title":"Kaisa Tera Pyaar Kaisa Gussa Hai Tera","artist":"Amit Kumar, Lata Mangeshkar","era":"1980s","lane":"Retro Bollywood","match_score":77.7,"discovery_score":68.7,"observed_views":64200},
+    {"rank":8,"title":"Jeevan Se Bhari Teri Aankhen","artist":"Kishore Kumar","era":"1970s","lane":"Retro Bollywood","match_score":75.4,"discovery_score":59.6,"observed_views":14900},
+    {"rank":9,"title":"Tum Se Hi","artist":"Pritam, Mohit Chauhan","era":"2000s","lane":"Retro Bollywood","match_score":74.2,"discovery_score":45,"observed_views":null},
+    {"rank":10,"title":"Jimmy Jimmy","artist":"Pragati Nagpal, Salim-Sulaiman","era":"1980s","lane":"Retro Bollywood","match_score":74.2,"discovery_score":45,"observed_views":null},
+    {"rank":11,"title":"Pal Pal Dil Ke Paas","artist":"Kishore Kumar","era":"1970s","lane":"Retro Bollywood","match_score":71.8,"discovery_score":45,"observed_views":null},
+    {"rank":12,"title":"Yeh Vaada Raha","artist":"Kishore Kumar, Asha Bhosle","era":"1980s","lane":"Retro Bollywood","match_score":71.8,"discovery_score":45,"observed_views":null}
   ],
   "experiments": [
-    {
-      "song": "KALYANI (with Shreya Ghoshal) - Remix",
-      "artist": "ARJN, KDS, FIFTY4, Shreya Ghoshal",
-      "score": 91.6,
-      "format": "emotional story",
-      "test": "Same story quality, change only audio + opening hook so the result is attributable."
-    },
-    {
-      "song": "Aarzu",
-      "artist": "Noor, Khan, Madhurxo",
-      "score": 90.1,
-      "format": "romantic story",
-      "test": "Same story quality, change only audio + opening hook so the result is attributable."
-    },
-    {
-      "song": "Majboor",
-      "artist": "Sheheryar Rehan, Zoha Waseem",
-      "score": 89.1,
-      "format": "emotional twist",
-      "test": "Same story quality, change only audio + opening hook so the result is attributable."
-    },
-    {
-      "song": "Bairan",
-      "artist": "Banjaare",
-      "score": 87.6,
-      "format": "relationship POV",
-      "test": "Same story quality, change only audio + opening hook so the result is attributable."
-    }
+    {"song":"Tum Agar Saath Dene Ka Vada Karo","artist":"Mahendra Kapoor","score":87.5,"format":"nostalgia","era":"1960s"},
+    {"song":"Mera Jeevan Kora Kagaz","artist":"Kishore Kumar","score":84.1,"format":"sad story","era":"1970s"},
+    {"song":"Do Dil Mil Rahe Hai","artist":"Kumar Sanu","score":83.3,"format":"90s nostalgia","era":"1990s"},
+    {"song":"Mere Mehboob Qayamat Hogi","artist":"Kishore Kumar","score":82.1,"format":"heartbreak","era":"1960s"}
   ],
   "rules": {
-    "reach_priority": "shares + reach + views, not likes alone",
-    "anti_overfitting": "do not repeat the same audio more than twice in the top experiment set",
-    "trend_guard": "trending audio is a discovery signal, not a guarantee of reach",
-    "cold_start": "until enough account data exists, use trend score + format fit; after 10+ reels, weight account history more heavily"
+    "niche_priority": "Retro Bollywood is a hard filter; generic new songs are excluded.",
+    "ranking_priority": "niche fit > account history > public discovery signal > generic trendiness",
+    "new_song_guard": "Only retro remixes/revivals can enter as crossover experiments.",
+    "timezone": "India / Asia-Kolkata"
   }
 }
