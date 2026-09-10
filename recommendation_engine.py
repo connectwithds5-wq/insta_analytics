@@ -2,8 +2,9 @@ import json
 import math
 import re
 import sqlite3
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
+from zoneinfo import ZoneInfo
 
 import pandas as pd
 
@@ -12,6 +13,7 @@ DB_PATH = Path(__import__('os').getenv('DB_PATH', ROOT / 'instagram_analytics.db
 TREND_PATH = ROOT / 'trend_data.json'
 NICHE_PATH = ROOT / 'niche_config.json'
 OUT_PATH = ROOT / 'recommendations.json'
+IST = ZoneInfo('Asia/Kolkata')
 
 
 def load_json(path, default):
@@ -50,7 +52,6 @@ def account_signals(df, niche):
     if df.empty:
         return {'sample_size': 0, 'best_hours': [], 'best_days': [], 'top_captions': [], 'baseline_reach': 0, 'baseline_views': 0, 'baseline_engagement': 0, 'niche_signal_hits': 0, 'niche_confidence': 0}
     work = df.copy()
-    # Instagram timestamps are normalized to UTC by the API; recommendations must use India local time.
     local_time = work.published_at.dt.tz_convert('Asia/Kolkata')
     work['day'] = local_time.dt.day_name()
     work['hour'] = local_time.dt.hour
@@ -62,8 +63,8 @@ def account_signals(df, niche):
     niche_confidence = min(100, round((hits / max(3, len(df))) * 100 + (25 if hits else 0), 1))
     return {
         'sample_size': int(len(work)),
-        'best_hours': [{'hour': int(k), 'score': round(float(v), 1)} for k, v in best_hours.items()],
-        'best_days': [{'day': str(k), 'score': round(float(v), 1)} for k, v in best_days.items()],
+        'best_hours': [{'hour': int(k), 'score': round(float(v), 1)} for k,v in best_hours.items()],
+        'best_days': [{'day': str(k), 'score': round(float(v), 1)} for k,v in best_days.items()],
         'top_captions': [str(x)[:100] for x in top.caption if str(x).strip()],
         'baseline_reach': round(float(work.reach.mean()), 1),
         'baseline_views': round(float(work.views.mean()), 1),
@@ -114,6 +115,20 @@ def score_track(track, df, signals, niche):
     return round(min(99, score), 1)
 
 
+def next_posting_slot(best_hours):
+    """Return the next upcoming historically strong posting slot in India time."""
+    now = datetime.now(IST)
+    hours = sorted({int(x['hour']) for x in best_hours if 0 <= int(x['hour']) <= 23})
+    if not hours:
+        hours = [20]
+    for hour in hours:
+        candidate = now.replace(hour=hour, minute=0, second=0, microsecond=0)
+        if candidate > now:
+            return candidate
+    tomorrow = now + timedelta(days=1)
+    return tomorrow.replace(hour=hours[0], minute=0, second=0, microsecond=0)
+
+
 def build_recommendations():
     df = load_reels()
     niche = load_json(NICHE_PATH, {'mode': 'retro_bollywood', 'name': 'Retro Bollywood', 'hard_exclude_new_releases': True})
@@ -135,14 +150,15 @@ def build_recommendations():
     primary = None
     if top:
         p = top[0]
-        hour = signals['best_hours'][0]['hour'] if signals['best_hours'] else 20
+        next_slot = next_posting_slot(signals['best_hours'])
         primary = {
             'song': p['title'], 'artist': p['artist'], 'movie': p.get('movie', ''), 'era': p.get('era', ''),
             'why': f"Retro-niche fit {p.get('niche_score', 100)}/100 + discovery signal {p.get('discovery_score', 0)}/100 + account fit.",
             'reel_format': p.get('formats', ['nostalgia'])[0],
             'hook': '0–1 sec: पुराने गाने की एक ऐसी feeling जो viewer को अपनी याद याद दिला दे',
             'structure': ['0–2s nostalgic hook', '2–6s relatable memory', '6–10s emotional turn', '10–13s lyric/payoff', '13–15s seamless loop'],
-            'posting_hour_local': hour,
+            'posting_hour_local': next_slot.hour,
+            'next_posting_at_ist': next_slot.isoformat(),
             'audio_note': 'Use the official Instagram audio page and confirm the original/official sound is available for this account before publishing.'
         }
 
@@ -163,7 +179,8 @@ def build_recommendations():
             'reach_priority': 'shares + reach + views, not likes alone',
             'trend_guard': 'Public trend signals are discovery inputs, not a guarantee of reach.',
             'account_learning': 'When a song title is present in account captions, its historical performance gets an additional account-fit signal.',
-            'timezone': 'Best posting hours are calculated in Asia/Kolkata, not UTC.'
+            'timezone': 'Best posting hours are calculated in Asia/Kolkata, not UTC.',
+            'next_slot': 'posting_hour_local is now the next upcoming strong slot in Asia/Kolkata; if all strong hours have passed today, use the first strong hour tomorrow.'
         }
     }
     OUT_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding='utf-8')
