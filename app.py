@@ -1,175 +1,195 @@
+import json
 import os
 import sqlite3
-from datetime import datetime, timezone
 from pathlib import Path
 
 import pandas as pd
-import requests
 import streamlit as st
 
-DB_PATH = Path(os.getenv("DB_PATH", "instagram_analytics.db"))
-API_VERSION = os.getenv("META_API_VERSION", "v23.0")
-# Instagram Login tokens use graph.instagram.com.
-GRAPH_URL = f"https://graph.instagram.com/{API_VERSION}"
+from recommendation_engine import build_recommendations
+
+ROOT = Path(__file__).resolve().parent
+DB_PATH = Path(os.getenv('DB_PATH', ROOT / 'instagram_analytics.db'))
+REC_PATH = ROOT / 'recommendations.json'
+TREND_PATH = ROOT / 'trend_data.json'
+
+st.set_page_config(page_title='Instagram Growth Command Center', page_icon='📈', layout='wide')
+
+st.markdown('''<style>
+.block-container{padding-top:1.5rem;max-width:1400px}
+[data-testid="stMetric"]{border:1px solid rgba(128,128,128,.18);padding:12px;border-radius:14px}
+</style>''', unsafe_allow_html=True)
 
 
 def db():
-    con = sqlite3.connect(DB_PATH)
-    con.row_factory = sqlite3.Row
-    return con
+    return sqlite3.connect(DB_PATH)
 
 
 def init_db():
     con = db()
-    con.executescript("""
-    CREATE TABLE IF NOT EXISTS profile_snapshots (
-      captured_at TEXT NOT NULL,
-      followers INTEGER,
-      follows INTEGER,
-      media_count INTEGER,
-      reach INTEGER,
-      accounts_engaged INTEGER
-    );
-    CREATE TABLE IF NOT EXISTS reels (
-      id TEXT PRIMARY KEY,
-      caption TEXT,
-      permalink TEXT,
-      published_at TEXT,
-      media_type TEXT,
-      media_product_type TEXT,
-      views INTEGER DEFAULT 0,
-      reach INTEGER DEFAULT 0,
-      likes INTEGER DEFAULT 0,
-      comments INTEGER DEFAULT 0,
-      shares INTEGER DEFAULT 0,
-      saves INTEGER DEFAULT 0,
-      interactions INTEGER DEFAULT 0
-    );
-    CREATE INDEX IF NOT EXISTS idx_reels_published ON reels(published_at);
-    """)
+    con.executescript('''
+    CREATE TABLE IF NOT EXISTS profile_snapshots(captured_at TEXT NOT NULL, followers INTEGER, follows INTEGER, media_count INTEGER, reach INTEGER, accounts_engaged INTEGER);
+    CREATE TABLE IF NOT EXISTS reels(id TEXT PRIMARY KEY, caption TEXT, permalink TEXT, published_at TEXT, media_type TEXT, media_product_type TEXT, views INTEGER DEFAULT 0, reach INTEGER DEFAULT 0, likes INTEGER DEFAULT 0, comments INTEGER DEFAULT 0, shares INTEGER DEFAULT 0, saves INTEGER DEFAULT 0, interactions INTEGER DEFAULT 0);
+    ''')
     con.commit(); con.close()
-
-
-def api_get(path, params):
-    r = requests.get(f"{GRAPH_URL}/{path}", params=params, timeout=30)
-    if not r.ok:
-        try:
-            detail = r.json()
-        except ValueError:
-            detail = r.text[:1000]
-        raise RuntimeError(f"Meta API {r.status_code} for {path}: {detail}")
-    return r.json()
-
-
-def token_and_user():
-    return os.getenv("INSTAGRAM_ACCESS_TOKEN"), os.getenv("INSTAGRAM_USER_ID")
-
-
-def fetch_and_store():
-    token, user_id = token_and_user()
-    if not token or not user_id:
-        raise RuntimeError("Set INSTAGRAM_ACCESS_TOKEN and INSTAGRAM_USER_ID in the environment.")
-
-    fields = "id,caption,media_type,media_product_type,permalink,timestamp,like_count,comments_count"
-    media = api_get(f"{user_id}/media", {"fields": fields, "limit": 100, "access_token": token}).get("data", [])
-    con = db()
-
-    for item in media:
-        metrics = {}
-        try:
-            ins = api_get(f"{item['id']}/insights", {"metric": "reach,likes,comments,shares,saved,views,total_interactions", "access_token": token})
-            metrics = {x["name"]: x.get("values", [{}])[-1].get("value", 0) for x in ins.get("data", [])}
-        except RuntimeError:
-            metrics = {}
-        con.execute("""
-          INSERT INTO reels(id,caption,permalink,published_at,media_type,media_product_type,views,reach,likes,comments,shares,saves,interactions)
-          VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?)
-          ON CONFLICT(id) DO UPDATE SET
-            caption=excluded.caption, permalink=excluded.permalink, published_at=excluded.published_at,
-            views=excluded.views, reach=excluded.reach, likes=excluded.likes, comments=excluded.comments,
-            shares=excluded.shares, saves=excluded.saves, interactions=excluded.interactions
-        """, (item["id"], item.get("caption",""), item.get("permalink",""), item.get("timestamp",""), item.get("media_type",""), item.get("media_product_type",""),
-              metrics.get("views", 0), metrics.get("reach", 0), metrics.get("likes", item.get("like_count", 0)),
-              metrics.get("comments", item.get("comments_count", 0)), metrics.get("shares", 0), metrics.get("saved", 0), metrics.get("total_interactions", 0)))
-
-    con.commit(); con.close()
-    return len(media)
 
 
 def load_reels():
-    return pd.read_sql_query("SELECT * FROM reels ORDER BY published_at DESC", db())
-
-
-def score(df):
-    if df.empty: return df
-    base = df["reach"].replace(0, pd.NA)
-    df["engagement_rate"] = ((df.likes + df.comments + df.shares + df.saves) / base * 100).fillna(0).round(2)
-    df["performance_score"] = (df.views * 0.35 + df.reach * 0.25 + df.shares * 2 + df.saves * 2 + df.likes * 0.5 + df.comments).round(1)
+    con = db()
+    try:
+        df = pd.read_sql_query('SELECT * FROM reels ORDER BY published_at DESC', con)
+    finally:
+        con.close()
+    if df.empty:
+        return df
+    for c in ['views','reach','likes','comments','shares','saves','interactions']:
+        df[c] = pd.to_numeric(df[c], errors='coerce').fillna(0)
+    df['published_at'] = pd.to_datetime(df['published_at'], errors='coerce', utc=True)
+    df['engagement_rate'] = ((df.likes + df.comments + df.shares + df.saves) / df.reach.replace(0, pd.NA) * 100).fillna(0)
+    df['performance_score'] = (df.views*.35 + df.reach*.25 + df.shares*2 + df.saves*2 + df.likes*.5 + df.comments).round(1)
     return df
 
 
-def recommendation(df):
-    if df.empty: return None
-    d = df.copy(); d["published_at"] = pd.to_datetime(d.published_at, errors="coerce")
-    d = d.dropna(subset=["published_at"])
-    if d.empty: return None
-    d["day"] = d.published_at.dt.day_name(); d["hour"] = d.published_at.dt.hour
-    day = d.groupby("day")["performance_score"].mean().sort_values(ascending=False)
-    hour = d.groupby("hour")["performance_score"].mean().sort_values(ascending=False)
-    best_day = day.index[0]; best_hour = int(hour.index[0])
-    recent = d.head(min(20, len(d)))
-    return best_day, best_hour, recent.iloc[0].caption[:80] if not recent.empty else ""
+def load_profile():
+    con = db()
+    try:
+        df = pd.read_sql_query('SELECT * FROM profile_snapshots ORDER BY captured_at DESC', con)
+    finally:
+        con.close()
+    return df
 
 
-st.set_page_config(page_title="Instagram Reels Analytics", page_icon="📊", layout="wide")
+def load_json(path, fallback):
+    try:
+        return json.loads(path.read_text(encoding='utf-8'))
+    except Exception:
+        return fallback
+
+
+def human(n):
+    n = float(n or 0)
+    if n >= 1_000_000: return f'{n/1_000_000:.1f}M'
+    if n >= 1_000: return f'{n/1_000:.1f}K'
+    return f'{int(n):,}'
+
+
 init_db()
-st.title("📊 Instagram Reels Analytics")
-st.caption("Analytics only — no uploading or publishing automation.")
+reels = load_reels()
+profile = load_profile()
+rec = load_json(REC_PATH, {})
+trend = load_json(TREND_PATH, {'tracks': []})
+
+st.title('📈 Instagram Growth Command Center')
+st.caption('Your account data + current trend signals → Reel ideas, audio choices and posting strategy. Analytics only; this app never publishes.')
 
 with st.sidebar:
-    st.header("Data")
-    if st.button("🔄 Sync Instagram data", use_container_width=True):
-        try:
-            n = fetch_and_store(); st.success(f"Synced {n} media items.")
-        except Exception as e:
-            st.error(str(e))
-    if st.button("Clear dashboard cache", use_container_width=True):
-        st.cache_data.clear(); st.rerun()
+    st.header('Controls')
+    if st.button('🔄 Rebuild recommendations', use_container_width=True):
+        build_recommendations()
+        st.rerun()
+    st.divider()
+    st.write('**Data pipeline**')
+    st.write('Instagram API → SQLite → account scoring → trend matching → recommendation')
+    if profile.empty:
+        st.warning('Profile history is not available yet. Run the Analytics Sync once more after the latest update.')
 
-_df = score(load_reels())
-if _df.empty:
-    st.info("No Reel data yet. Add your Meta/Instagram API secrets, then click Sync Instagram data.")
+if reels.empty:
+    st.info('No Reel rows are stored yet. Run **Instagram Analytics Sync** from GitHub Actions, then refresh this dashboard.')
     st.stop()
 
-followers = int(pd.to_numeric(_df.likes, errors="coerce").fillna(0).sum())
-views = int(_df.views.sum()); reach = int(_df.reach.sum()); engagement = float(_df.engagement_rate.mean())
+views = reels.views.sum(); reach = reels.reach.sum(); likes = reels.likes.sum(); shares = reels.shares.sum(); saves = reels.saves.sum()
+avg_eng = reels.engagement_rate.mean()
 
-c1,c2,c3,c4 = st.columns(4)
-c1.metric("Reels", len(_df)); c2.metric("Total views", f"{views:,}"); c3.metric("Total reach", f"{reach:,}"); c4.metric("Avg engagement", f"{engagement:.2f}%")
+c1,c2,c3,c4,c5 = st.columns(5)
+c1.metric('Reels', len(reels)); c2.metric('Total views', human(views)); c3.metric('Total reach', human(reach)); c4.metric('Shares', human(shares)); c5.metric('Avg engagement', f'{avg_eng:.2f}%')
 
-st.subheader("📈 Reel performance")
-chart = _df.copy(); chart["published_at"] = pd.to_datetime(chart.published_at, errors="coerce"); chart = chart.dropna(subset=["published_at"]).sort_values("published_at").set_index("published_at")
-st.line_chart(chart[["views","reach"]])
+if not profile.empty:
+    p = profile.iloc[0]
+    p1,p2,p3 = st.columns(3)
+    p1.metric('Followers', human(p.get('followers', 0)))
+    p2.metric('Following', human(p.get('follows', 0)))
+    p3.metric('Profile media', human(p.get('media_count', 0)))
 
-left,right = st.columns(2)
-with left:
-    st.subheader("🏆 Top Reels")
-    cols=["published_at","views","reach","likes","comments","shares","saves","engagement_rate","performance_score"]
-    st.dataframe(_df.sort_values("performance_score", ascending=False)[cols].head(10), use_container_width=True, hide_index=True)
-with right:
-    st.subheader("🕐 Best posting times")
-    t = _df.copy(); t["published_at"] = pd.to_datetime(t.published_at, errors="coerce"); t["hour"] = t.published_at.dt.hour
-    hourly=t.groupby("hour")["performance_score"].mean().sort_values(ascending=False).head(10).reset_index()
-    st.dataframe(hourly, use_container_width=True, hide_index=True)
+st.divider()
 
-st.subheader("🤖 Next Reel Advisor")
-rec = recommendation(_df)
-if rec:
-    day,hour,_ = rec
-    a,b,c = st.columns(3)
-    a.metric("Best day", day); b.metric("Best hour", f"{hour:02d}:00"); c.metric("Strategy", "Repeat top-performing pattern")
-    st.info("Recommendation is based on your historical Reel performance. As more data is synced, the recommendation becomes more reliable.")
+tab1, tab2, tab3, tab4 = st.tabs(['🚀 Growth Advisor', '🎵 Trending Audio', '📊 Account Analytics', '🧪 Experiments'])
 
-st.subheader("📋 All Reels")
-show = _df[["id","published_at","caption","views","reach","likes","comments","shares","saves","engagement_rate","performance_score"]].copy()
-st.dataframe(show, use_container_width=True, hide_index=True)
+with tab1:
+    st.subheader('🎯 What should I post next?')
+    primary = rec.get('primary_recommendation')
+    if primary:
+        a,b,c = st.columns(3)
+        a.metric('Recommended audio', primary['song'])
+        b.metric('Account-fit score', f"{rec.get('trending_audio_ranked',[{}])[0].get('match_score',0)}/100")
+        c.metric('Best posting hour', f"{primary.get('posting_hour_local',20):02d}:00")
+        st.success(f"**{primary['song']} — {primary['artist']}**  •  {primary['reel_format']}\n\n{primary['why']}")
+        left,right = st.columns(2)
+        with left:
+            st.markdown('### Hook')
+            st.write(primary['hook'])
+            st.markdown('### Structure')
+            for x in primary['structure']:
+                st.write('• ' + x)
+        with right:
+            st.markdown('### Execution')
+            st.write('Keep the story simple → relatable → emotional twist. Change only one major variable per test.')
+            st.warning(primary['audio_note'])
+    else:
+        st.info('Trend recommendations will appear after the recommendation engine runs.')
+
+    st.markdown('### 🧠 Account signals')
+    sample = rec.get('sample', {})
+    s1,s2,s3 = st.columns(3)
+    s1.metric('Training reels', sample.get('sample_size', 0)); s2.metric('Avg reel reach', human(sample.get('baseline_reach',0))); s3.metric('Avg reel views', human(sample.get('baseline_views',0)))
+    if sample.get('best_hours'):
+        st.write('**Your strongest hours:** ' + ' • '.join(f"{x['hour']:02d}:00" for x in sample['best_hours']))
+    if sample.get('top_captions'):
+        st.write('**Top-performing caption patterns:**')
+        for caption in sample['top_captions']:
+            st.write('• ' + caption)
+
+with tab2:
+    st.subheader('🔥 Trending audio — India + global')
+    st.caption(f"Trend seed refreshed {trend.get('updated_at','')}. Trend score is a discovery signal, not a guarantee of reach.")
+    rows = rec.get('trending_audio_ranked', []) or trend.get('tracks', [])
+    if rows:
+        table = pd.DataFrame([{ 'Rank': i+1, 'Song': x.get('title'), 'Artist': x.get('artist'), 'Lane': x.get('lane'), 'Fit': x.get('match_score', x.get('trend_score')), 'Best formats': ', '.join(x.get('formats',[])[:3]) } for i,x in enumerate(rows[:12])])
+        st.dataframe(table, use_container_width=True, hide_index=True)
+        st.markdown('**Current shortlist for emotional Hindi reels:**')
+        for x in rows[:6]:
+            st.write(f"🎧 **{x.get('title')} — {x.get('artist')}**  ·  {', '.join(x.get('formats',[])[:2])}")
+    st.info('Before using any song, open the audio inside Instagram and confirm it is available/licensed for your account. Business/creator accounts can have a smaller music library.')
+
+with tab3:
+    st.subheader('📊 What is actually driving reach?')
+    chart = reels.copy().dropna(subset=['published_at']).sort_values('published_at').set_index('published_at')
+    if not chart.empty:
+        st.line_chart(chart[['views','reach']])
+    left,right = st.columns(2)
+    with left:
+        st.markdown('### 🏆 Top 10 by reach')
+        cols=['published_at','caption','reach','views','shares','saves','likes','comments','engagement_rate','performance_score']
+        st.dataframe(reels.sort_values('reach', ascending=False)[cols].head(10), use_container_width=True, hide_index=True)
+    with right:
+        st.markdown('### 🔁 Top 10 by shares')
+        st.dataframe(reels.sort_values('shares', ascending=False)[cols].head(10), use_container_width=True, hide_index=True)
+    timing = reels.dropna(subset=['published_at']).copy()
+    if not timing.empty:
+        timing['hour'] = timing.published_at.dt.hour
+        timing['day'] = timing.published_at.dt.day_name()
+        h = timing.groupby('hour')['performance_score'].mean().sort_values(ascending=False).head(8).reset_index()
+        d = timing.groupby('day')['performance_score'].mean().sort_values(ascending=False).head(7).reset_index()
+        x,y = st.columns(2)
+        x.markdown('### ⏰ Best hours'); x.dataframe(h, use_container_width=True, hide_index=True)
+        y.markdown('### 📅 Best days'); y.dataframe(d, use_container_width=True, hide_index=True)
+
+with tab4:
+    st.subheader('🧪 Controlled growth experiments')
+    st.write('The system deliberately tests audio + format combinations instead of blindly copying viral reels.')
+    for i,x in enumerate(rec.get('experiments', []), 1):
+        with st.container(border=True):
+            st.markdown(f"### Test {i}: {x['song']} — {x['artist']}")
+            st.write(f"**Score:** {x['score']}/100  •  **Format:** {x['format']}")
+            st.write(x['test'])
+    st.markdown('### Scoring policy')
+    st.write('• Reach and shares are weighted more heavily than likes.  • Trend momentum is a discovery input.  • Account history gets more weight as the sample grows.  • No recommendation promises viral reach.')
