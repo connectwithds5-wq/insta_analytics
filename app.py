@@ -9,7 +9,8 @@ import streamlit as st
 
 DB_PATH = Path(os.getenv("DB_PATH", "instagram_analytics.db"))
 API_VERSION = os.getenv("META_API_VERSION", "v23.0")
-GRAPH_URL = f"https://graph.facebook.com/{API_VERSION}"
+# Instagram Login tokens use graph.instagram.com.
+GRAPH_URL = f"https://graph.instagram.com/{API_VERSION}"
 
 
 def db():
@@ -51,7 +52,12 @@ def init_db():
 
 def api_get(path, params):
     r = requests.get(f"{GRAPH_URL}/{path}", params=params, timeout=30)
-    r.raise_for_status()
+    if not r.ok:
+        try:
+            detail = r.json()
+        except ValueError:
+            detail = r.text[:1000]
+        raise RuntimeError(f"Meta API {r.status_code} for {path}: {detail}")
     return r.json()
 
 
@@ -73,7 +79,7 @@ def fetch_and_store():
         try:
             ins = api_get(f"{item['id']}/insights", {"metric": "reach,likes,comments,shares,saved,views,total_interactions", "access_token": token})
             metrics = {x["name"]: x.get("values", [{}])[-1].get("value", 0) for x in ins.get("data", [])}
-        except requests.HTTPError:
+        except RuntimeError:
             metrics = {}
         con.execute("""
           INSERT INTO reels(id,caption,permalink,published_at,media_type,media_product_type,views,reach,likes,comments,shares,saves,interactions)
