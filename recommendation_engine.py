@@ -48,14 +48,12 @@ def load_reels():
 def account_signals(df, niche):
     terms = niche.get('account_signal_terms', [])
     if df.empty:
-        return {
-            'sample_size': 0, 'best_hours': [], 'best_days': [], 'top_captions': [],
-            'baseline_reach': 0, 'baseline_views': 0, 'baseline_engagement': 0,
-            'niche_signal_hits': 0, 'niche_confidence': 0
-        }
+        return {'sample_size': 0, 'best_hours': [], 'best_days': [], 'top_captions': [], 'baseline_reach': 0, 'baseline_views': 0, 'baseline_engagement': 0, 'niche_signal_hits': 0, 'niche_confidence': 0}
     work = df.copy()
-    work['day'] = work.published_at.dt.day_name()
-    work['hour'] = work.published_at.dt.hour
+    # Instagram timestamps are normalized to UTC by the API; recommendations must use India local time.
+    local_time = work.published_at.dt.tz_convert('Asia/Kolkata')
+    work['day'] = local_time.dt.day_name()
+    work['hour'] = local_time.dt.hour
     best_hours = work.groupby('hour')['performance_score'].mean().sort_values(ascending=False).head(3)
     best_days = work.groupby('day')['performance_score'].mean().sort_values(ascending=False).head(3)
     top = work.sort_values('performance_score', ascending=False).head(5)
@@ -83,8 +81,6 @@ def account_track_signal(df, track):
     if df.empty:
         return {'matched_reels': 0, 'score': 0}
     title = normalize_title(track.get('title', ''))
-    if not title:
-        return {'matched_reels': 0, 'score': 0}
     tokens = [t for t in title.split() if len(t) >= 3]
     if not tokens:
         return {'matched_reels': 0, 'score': 0}
@@ -101,7 +97,6 @@ def discovery_score(track):
     views = track.get('observed_views')
     if views is None:
         return 45.0
-    # Log scale prevents a few million-view reels from completely dominating the niche signal.
     return round(min(100, max(0, math.log10(max(views, 1)) / 7 * 100)), 1)
 
 
@@ -123,11 +118,9 @@ def build_recommendations():
     df = load_reels()
     niche = load_json(NICHE_PATH, {'mode': 'retro_bollywood', 'name': 'Retro Bollywood', 'hard_exclude_new_releases': True})
     trend_data = load_json(TREND_PATH, {'tracks': []})
-    trends = trend_data.get('tracks', [])
     signals = account_signals(df, niche)
-
     ranked = []
-    for track in trends:
+    for track in trend_data.get('tracks', []):
         item = dict(track)
         score = score_track(track, df, signals, niche)
         if score < 0:
@@ -142,47 +135,35 @@ def build_recommendations():
     primary = None
     if top:
         p = top[0]
-        format_name = p.get('formats', ['nostalgia'])[0]
         hour = signals['best_hours'][0]['hour'] if signals['best_hours'] else 20
         primary = {
-            'song': p['title'],
-            'artist': p['artist'],
-            'movie': p.get('movie', ''),
-            'era': p.get('era', ''),
+            'song': p['title'], 'artist': p['artist'], 'movie': p.get('movie', ''), 'era': p.get('era', ''),
             'why': f"Retro-niche fit {p.get('niche_score', 100)}/100 + discovery signal {p.get('discovery_score', 0)}/100 + account fit.",
-            'reel_format': format_name,
+            'reel_format': p.get('formats', ['nostalgia'])[0],
             'hook': '0–1 sec: पुराने गाने की एक ऐसी feeling जो viewer को अपनी याद याद दिला दे',
             'structure': ['0–2s nostalgic hook', '2–6s relatable memory', '6–10s emotional turn', '10–13s lyric/payoff', '13–15s seamless loop'],
             'posting_hour_local': hour,
             'audio_note': 'Use the official Instagram audio page and confirm the original/official sound is available for this account before publishing.'
         }
 
-    experiments = []
-    for item in top[:4]:
-        experiments.append({
-            'song': item['title'],
-            'artist': item['artist'],
-            'score': item['match_score'],
-            'format': item.get('formats', ['nostalgia'])[0],
-            'era': item.get('era', ''),
-            'test': 'Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed.'
-        })
+    experiments = [{
+        'song': x['title'], 'artist': x['artist'], 'score': x['match_score'], 'format': x.get('formats', ['nostalgia'])[0], 'era': x.get('era', ''),
+        'test': 'Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed.'
+    } for x in top[:4]]
 
     payload = {
         'generated_at': datetime.now(timezone.utc).isoformat(),
         'model': 'retro-bollywood niche-aware deterministic ranking',
-        'niche': niche,
-        'sample': signals,
-        'primary_recommendation': primary,
-        'trending_audio_ranked': ranked,
-        'experiments': experiments,
+        'niche': niche, 'sample': signals, 'primary_recommendation': primary,
+        'trending_audio_ranked': ranked, 'experiments': experiments,
         'rules': {
             'niche_priority': 'Retro Bollywood niche is a hard filter. Generic new songs are not eligible.',
             'ranking_priority': 'niche fit > account performance/history > public discovery signal > generic trendiness',
             'new_song_guard': 'Do not recommend a current new release unless explicitly classified as a retro remix/revival crossover.',
             'reach_priority': 'shares + reach + views, not likes alone',
             'trend_guard': 'Public trend signals are discovery inputs, not a guarantee of reach.',
-            'account_learning': 'When a song title is present in account captions, its historical performance gets an additional account-fit signal.'
+            'account_learning': 'When a song title is present in account captions, its historical performance gets an additional account-fit signal.',
+            'timezone': 'Best posting hours are calculated in Asia/Kolkata, not UTC.'
         }
     }
     OUT_PATH.write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding='utf-8')
