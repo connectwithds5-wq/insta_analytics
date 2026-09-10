@@ -8,11 +8,17 @@ on:
 permissions:
   contents: write
 
+concurrency:
+  group: instagram-analytics-sync
+  cancel-in-progress: false
+
 jobs:
   sync:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -24,10 +30,22 @@ jobs:
           META_API_VERSION: ${{ secrets.META_API_VERSION || 'v23.0' }}
           DB_PATH: instagram_analytics.db
         run: python sync.py
-      - name: Persist database
+      - name: Build account-aware recommendations
+        env:
+          DB_PATH: instagram_analytics.db
+        run: python recommendation_engine.py
+      - name: Persist database and recommendations
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add instagram_analytics.db
-          git diff --cached --quiet || git commit -m 'chore: update Instagram analytics data'
-          git push
+          for attempt in 1 2 3; do
+            git add instagram_analytics.db recommendations.json
+            git diff --cached --quiet || git commit -m 'chore: update Instagram analytics and recommendations'
+            git pull --rebase origin main || { git rebase --abort || true; sleep $((attempt * 3)); continue; }
+            if git push origin HEAD:main; then
+              exit 0
+            fi
+            sleep $((attempt * 3))
+          done
+          echo 'Failed to push analytics after 3 attempts'
+          exit 1
