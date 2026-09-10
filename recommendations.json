@@ -1,18 +1,255 @@
 {
-  "generated_at": "2026-09-10T00:00:00Z",
-  "model": "cold-start trend ranking",
-  "sample": {"sample_size": 0, "best_hours": [], "best_days": [], "top_captions": [], "baseline_reach": 0, "baseline_views": 0, "baseline_engagement": 0},
+  "generated_at": "2026-09-10T09:24:43.232987+00:00",
+  "model": "account-aware deterministic ranking",
+  "sample": {
+    "sample_size": 98,
+    "best_hours": [
+      {
+        "hour": 5,
+        "score": 27913.8
+      },
+      {
+        "hour": 7,
+        "score": 5652.5
+      },
+      {
+        "hour": 8,
+        "score": 2883.9
+      }
+    ],
+    "best_days": [
+      {
+        "day": "Friday",
+        "score": 5514.6
+      },
+      {
+        "day": "Monday",
+        "score": 4065.0
+      },
+      {
+        "day": "Saturday",
+        "score": 2726.1
+      }
+    ],
+    "top_captions": [
+      "The heart that doesn't have you in it... isn't really mine 💔🚗\n90s heartbreak hits different 🎶\n\nLip s",
+      "Pure retro magic in every frame. ✨ Sound on, feel the nostalgia! 🎶\n#EvergreenBollywood #OldSongs #Li",
+      "Jiske liye sabko chhoda 💔 great music love old bollywood songs\n\nJiske liye sabko chhoda…\nusi ne mere",
+      "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match",
+      "Kagaj kalam Daavat Mohammad Aziz + 90s Bollywood hits = Instant Goosebumps 🎧 Drop your favorite 90s "
+    ],
+    "baseline_reach": 3470.6,
+    "baseline_views": 4229.4,
+    "baseline_engagement": 5.45
+  },
   "primary_recommendation": {
     "song": "KALYANI (with Shreya Ghoshal) - Remix",
     "artist": "ARJN, KDS, FIFTY4, Shreya Ghoshal",
-    "why": "Cold-start recommendation from the current India/Hindi trend seed. It will be replaced by account-aware scoring after the next sync.",
+    "why": "Trend score 95/100 + account-fit score 91.6/100.",
     "reel_format": "emotional story",
     "hook": "0–1 sec: एक ऐसी line जो viewer को अपनी कहानी लगे",
-    "structure": ["0–2s hook", "2–6s relatable setup", "6–10s emotional turn", "10–13s payoff", "13–15s loop/CTA"],
-    "posting_hour_local": 20,
-    "audio_note": "Confirm the official Instagram audio is available/licensed for your account before publishing."
+    "structure": [
+      "0–2s hook",
+      "2–6s relatable setup",
+      "6–10s emotional turn",
+      "10–13s payoff",
+      "13–15s loop/CTA"
+    ],
+    "posting_hour_local": 5,
+    "audio_note": "Use the official Instagram audio page and confirm the sound is available for this account before publishing."
   },
-  "trending_audio_ranked": [],
-  "experiments": [],
-  "rules": {"reach_priority":"shares + reach + views, not likes alone", "trend_guard":"trending audio is a discovery signal, not a guarantee of reach"}
+  "trending_audio_ranked": [
+    {
+      "rank": 1,
+      "title": "KALYANI (with Shreya Ghoshal) - Remix",
+      "artist": "ARJN, KDS, FIFTY4, Shreya Ghoshal",
+      "lane": "Hindi/Indian",
+      "formats": [
+        "emotional story",
+        "cinematic text",
+        "romantic reveal"
+      ],
+      "trend_score": 95,
+      "match_score": 91.6
+    },
+    {
+      "rank": 2,
+      "title": "Aarzu",
+      "artist": "Noor, Khan, Madhurxo",
+      "lane": "Hindi/Indian",
+      "formats": [
+        "romantic story",
+        "sad story",
+        "POV"
+      ],
+      "trend_score": 93,
+      "match_score": 90.1
+    },
+    {
+      "rank": 3,
+      "title": "Majboor",
+      "artist": "Sheheryar Rehan, Zoha Waseem",
+      "lane": "Hindi/Indian",
+      "formats": [
+        "emotional twist",
+        "breakup",
+        "relatable text"
+      ],
+      "trend_score": 92,
+      "match_score": 89.1
+    },
+    {
+      "rank": 4,
+      "title": "Bairan",
+      "artist": "Banjaare",
+      "lane": "Hindi/Indian",
+      "formats": [
+        "relationship POV",
+        "slow cinematic",
+        "story reveal"
+      ],
+      "trend_score": 90,
+      "match_score": 87.6
+    },
+    {
+      "rank": 5,
+      "title": "Barsaat",
+      "artist": "Banjaare, Roni",
+      "lane": "Hindi/Indian",
+      "formats": [
+        "rain mood",
+        "nostalgia",
+        "love story"
+      ],
+      "trend_score": 89,
+      "match_score": 86.7
+    },
+    {
+      "rank": 6,
+      "title": "Gehra Hua",
+      "artist": "Shashwat Sachdev, Arijit Singh",
+      "lane": "Hindi/Indian",
+      "formats": [
+        "deep emotion",
+        "memory",
+        "cinematic"
+      ],
+      "trend_score": 88,
+      "match_score": 85.8
+    },
+    {
+      "rank": 7,
+      "title": "Ring My Bell",
+      "artist": "Anita Ward",
+      "lane": "Global",
+      "formats": [
+        "quick reveal",
+        "playful transition",
+        "lifestyle"
+      ],
+      "trend_score": 87,
+      "match_score": 76.8
+    },
+    {
+      "rank": 8,
+      "title": "Less Than a Lover",
+      "artist": "JENNIE",
+      "lane": "Global",
+      "formats": [
+        "dreamy aesthetic",
+        "romantic",
+        "soft cinematic"
+      ],
+      "trend_score": 86,
+      "match_score": 75.9
+    },
+    {
+      "rank": 9,
+      "title": "Timber",
+      "artist": "Pitbull feat. Kesha",
+      "lane": "Global",
+      "formats": [
+        "fast cuts",
+        "transition",
+        "high energy"
+      ],
+      "trend_score": 84,
+      "match_score": 74.4
+    },
+    {
+      "rank": 10,
+      "title": "Beautiful Things",
+      "artist": "Benson Boone",
+      "lane": "Global",
+      "formats": [
+        "emotional reveal",
+        "relationship",
+        "storytime"
+      ],
+      "trend_score": 83,
+      "match_score": 73.5
+    },
+    {
+      "rank": 11,
+      "title": "Die With A Smile",
+      "artist": "Lady Gaga & Bruno Mars",
+      "lane": "Global",
+      "formats": [
+        "romantic story",
+        "nostalgia",
+        "emotional"
+      ],
+      "trend_score": 82,
+      "match_score": 72.5
+    },
+    {
+      "rank": 12,
+      "title": "APT.",
+      "artist": "ROSÉ & Bruno Mars",
+      "lane": "Global",
+      "formats": [
+        "fast cuts",
+        "fun POV",
+        "transition"
+      ],
+      "trend_score": 81,
+      "match_score": 71.6
+    }
+  ],
+  "experiments": [
+    {
+      "song": "KALYANI (with Shreya Ghoshal) - Remix",
+      "artist": "ARJN, KDS, FIFTY4, Shreya Ghoshal",
+      "score": 91.6,
+      "format": "emotional story",
+      "test": "Same story quality, change only audio + opening hook so the result is attributable."
+    },
+    {
+      "song": "Aarzu",
+      "artist": "Noor, Khan, Madhurxo",
+      "score": 90.1,
+      "format": "romantic story",
+      "test": "Same story quality, change only audio + opening hook so the result is attributable."
+    },
+    {
+      "song": "Majboor",
+      "artist": "Sheheryar Rehan, Zoha Waseem",
+      "score": 89.1,
+      "format": "emotional twist",
+      "test": "Same story quality, change only audio + opening hook so the result is attributable."
+    },
+    {
+      "song": "Bairan",
+      "artist": "Banjaare",
+      "score": 87.6,
+      "format": "relationship POV",
+      "test": "Same story quality, change only audio + opening hook so the result is attributable."
+    }
+  ],
+  "rules": {
+    "reach_priority": "shares + reach + views, not likes alone",
+    "anti_overfitting": "do not repeat the same audio more than twice in the top experiment set",
+    "trend_guard": "trending audio is a discovery signal, not a guarantee of reach",
+    "cold_start": "until enough account data exists, use trend score + format fit; after 10+ reels, weight account history more heavily"
+  }
 }
