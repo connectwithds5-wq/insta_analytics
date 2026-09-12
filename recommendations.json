@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-12T06:29:28.287389+00:00",
+  "generated_at": "2026-09-12T08:32:23.548351+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -53,29 +53,29 @@
     "best_hours": [
       {
         "hour": 10,
-        "score": 15925.5
+        "score": 15929.3
       },
       {
         "hour": 13,
-        "score": 5716.0
+        "score": 5716.7
       },
       {
         "hour": 14,
-        "score": 2642.9
+        "score": 2643.6
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 5176.0
+        "score": 5176.8
       },
       {
         "day": "Monday",
-        "score": 4104.5
+        "score": 4106.0
       },
       {
         "day": "Saturday",
-        "score": 2547.1
+        "score": 2550.1
       }
     ],
     "top_captions": [
@@ -85,9 +85,9 @@
       "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match",
       "Kagaj kalam Daavat Mohammad Aziz + 90s Bollywood hits = Instant Goosebumps 🎧 Drop your favorite 90s "
     ],
-    "baseline_reach": 3409.6,
-    "baseline_views": 4153.4,
-    "baseline_engagement": 5.43,
+    "baseline_reach": 3410.5,
+    "baseline_views": 4155.0,
+    "baseline_engagement": 5.44,
     "niche_signal_hits": 911,
     "niche_confidence": 100
   },
@@ -106,8 +106,8 @@
       "10–13s lyric/payoff",
       "13–15s seamless loop"
     ],
-    "posting_hour_local": 13,
-    "next_posting_at_ist": "2026-09-12T13:00:00+05:30",
+    "posting_hour_local": 10,
+    "next_posting_at_ist": "2026-09-13T10:00:00+05:30",
     "audio_note": "Use the official Instagram audio page and confirm the original/official sound is available for this account before publishing."
   },
   "trending_audio_ranked": [
