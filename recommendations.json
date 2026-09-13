@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-13T00:33:32.209674+00:00",
+  "generated_at": "2026-09-13T06:34:25.694415+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -49,15 +49,15 @@
     "default_strategy": "Niche fit first, account performance second, current discovery signal third."
   },
   "sample": {
-    "sample_size": 101,
+    "sample_size": 102,
     "best_hours": [
       {
         "hour": 10,
-        "score": 15970.0
+        "score": 15986.5
       },
       {
         "hour": 13,
-        "score": 5739.7
+        "score": 5746.4
       },
       {
         "hour": 14,
@@ -67,15 +67,15 @@
     "best_days": [
       {
         "day": "Friday",
-        "score": 5186.2
+        "score": 5188.2
       },
       {
         "day": "Monday",
-        "score": 4118.3
+        "score": 4123.6
       },
       {
         "day": "Saturday",
-        "score": 2570.5
+        "score": 2574.1
       }
     ],
     "top_captions": [
@@ -85,10 +85,10 @@
       "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match",
       "Kagaj kalam Daavat Mohammad Aziz + 90s Bollywood hits = Instant Goosebumps 🎧 Drop your favorite 90s "
     ],
-    "baseline_reach": 3422.3,
-    "baseline_views": 4166.3,
-    "baseline_engagement": 5.48,
-    "niche_signal_hits": 911,
+    "baseline_reach": 3390.7,
+    "baseline_views": 4130.6,
+    "baseline_engagement": 10.33,
+    "niche_signal_hits": 929,
     "niche_confidence": 100
   },
   "primary_recommendation": {
@@ -106,8 +106,8 @@
       "10–13s lyric/payoff",
       "13–15s seamless loop"
     ],
-    "posting_hour_local": 10,
-    "next_posting_at_ist": "2026-09-13T10:00:00+05:30",
+    "posting_hour_local": 13,
+    "next_posting_at_ist": "2026-09-13T13:00:00+05:30",
     "audio_note": "Use the official Instagram audio page and confirm the original/official sound is available for this account before publishing."
   },
   "trending_audio_ranked": [
@@ -126,10 +126,10 @@
       "observed_views": 2500000,
       "niche_score": 100,
       "current_signal": "high observed reel views",
-      "match_score": 89.6,
+      "match_score": 89.7,
       "account_track_signal": {
         "matched_reels": 13,
-        "score": 62.6
+        "score": 63.2
       },
       "discovery_score": 91.4
     },
@@ -170,10 +170,10 @@
       "observed_views": 1100000,
       "niche_score": 100,
       "current_signal": "high observed reel views",
-      "match_score": 84.7,
+      "match_score": 84.8,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 26.7
+        "score": 26.9
       },
       "discovery_score": 86.3
     },
@@ -217,7 +217,7 @@
       "match_score": 81.8,
       "account_track_signal": {
         "matched_reels": 10,
-        "score": 24.5
+        "score": 24.7
       },
       "discovery_score": 75.3
     },
@@ -258,10 +258,10 @@
       "observed_views": null,
       "niche_score": 100,
       "current_signal": "currently ranked on public Instagram trending-song discovery",
-      "match_score": 78.1,
+      "match_score": 78.2,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 38.6
+        "score": 39.0
       },
       "discovery_score": 45.0
     },
@@ -349,7 +349,7 @@
       "match_score": 73.8,
       "account_track_signal": {
         "matched_reels": 1,
-        "score": 20.9
+        "score": 21.0
       },
       "discovery_score": 45.0
     },
@@ -368,10 +368,10 @@
       "observed_views": null,
       "niche_score": 100,
       "current_signal": "appears in current old-song Reel discovery playlists",
-      "match_score": 73.6,
+      "match_score": 73.7,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 18.8
+        "score": 19.0
       },
       "discovery_score": 45.0
     },
@@ -446,7 +446,7 @@
     {
       "song": "Do Dil Mil Rahe Hai",
       "artist": "Kumar Sanu",
-      "score": 89.6,
+      "score": 89.7,
       "format": "90s nostalgia",
       "era": "1990s",
       "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
@@ -462,7 +462,7 @@
     {
       "song": "Mere Mehboob Qayamat Hogi",
       "artist": "Kishore Kumar",
-      "score": 84.7,
+      "score": 84.8,
       "format": "nostalgia",
       "era": "1960s",
       "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
