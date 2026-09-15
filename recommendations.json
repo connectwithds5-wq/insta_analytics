@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-15T00:35:16.014136+00:00",
+  "generated_at": "2026-09-15T06:33:34.536404+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -49,33 +49,33 @@
     "default_strategy": "Niche fit first, account performance second, current discovery signal third."
   },
   "sample": {
-    "sample_size": 103,
+    "sample_size": 104,
     "best_hours": [
       {
         "hour": 10,
-        "score": 16118.5
+        "score": 16128.4
       },
       {
         "hour": 13,
-        "score": 5796.7
+        "score": 5801.6
       },
       {
         "hour": 14,
-        "score": 2652.6
+        "score": 2653.1
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 5204.5
+        "score": 5206.5
       },
       {
         "day": "Monday",
-        "score": 3942.4
+        "score": 3945.5
       },
       {
         "day": "Saturday",
-        "score": 2596.6
+        "score": 2598.7
       }
     ],
     "top_captions": [
@@ -85,10 +85,10 @@
       "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match",
       "Kagaj kalam Daavat Mohammad Aziz + 90s Bollywood hits = Instant Goosebumps 🎧 Drop your favorite 90s "
     ],
-    "baseline_reach": 3391.0,
-    "baseline_views": 4135.9,
-    "baseline_engagement": 5.52,
-    "niche_signal_hits": 939,
+    "baseline_reach": 3363.3,
+    "baseline_views": 4104.1,
+    "baseline_engagement": 5.55,
+    "niche_signal_hits": 944,
     "niche_confidence": 100
   },
   "primary_recommendation": {
@@ -106,8 +106,8 @@
       "10–13s lyric/payoff",
       "13–15s seamless loop"
     ],
-    "posting_hour_local": 10,
-    "next_posting_at_ist": "2026-09-15T10:00:00+05:30",
+    "posting_hour_local": 13,
+    "next_posting_at_ist": "2026-09-15T13:00:00+05:30",
     "audio_note": "Use the official Instagram audio page and confirm the original/official sound is available for this account before publishing."
   },
   "trending_audio_ranked": [
@@ -129,7 +129,7 @@
       "match_score": 89.3,
       "account_track_signal": {
         "matched_reels": 14,
-        "score": 59.2
+        "score": 59.8
       },
       "discovery_score": 91.4
     },
@@ -173,7 +173,7 @@
       "match_score": 84.8,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 26.9
+        "score": 27.1
       },
       "discovery_score": 86.3
     },
@@ -217,7 +217,7 @@
       "match_score": 81.6,
       "account_track_signal": {
         "matched_reels": 11,
-        "score": 22.7
+        "score": 22.9
       },
       "discovery_score": 75.3
     },
@@ -261,7 +261,7 @@
       "match_score": 78.2,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 39.0
+        "score": 39.4
       },
       "discovery_score": 45.0
     },
@@ -346,10 +346,10 @@
       "observed_views": null,
       "niche_score": 100,
       "current_signal": "appears in current old-song Reel discovery playlists",
-      "match_score": 73.8,
+      "match_score": 73.9,
       "account_track_signal": {
         "matched_reels": 1,
-        "score": 21.0
+        "score": 21.2
       },
       "discovery_score": 45.0
     },
@@ -371,7 +371,7 @@
       "match_score": 73.7,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 19.0
+        "score": 19.1
       },
       "discovery_score": 45.0
     },
