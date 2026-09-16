@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-16T12:32:29.649292+00:00",
+  "generated_at": "2026-09-16T18:28:57.566378+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -53,29 +53,29 @@
     "best_hours": [
       {
         "hour": 10,
-        "score": 16199.6
+        "score": 16233.5
       },
       {
         "hour": 13,
-        "score": 5873.8
+        "score": 5894.4
       },
       {
         "hour": 14,
-        "score": 2659.8
+        "score": 2660.1
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 5222.3
+        "score": 5225.6
       },
       {
         "day": "Monday",
-        "score": 3966.4
+        "score": 3977.3
       },
       {
         "day": "Saturday",
-        "score": 2627.6
+        "score": 2635.8
       }
     ],
     "top_captions": [
@@ -85,8 +85,8 @@
       "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match",
       "Kagaj kalam Daavat Mohammad Aziz + 90s Bollywood hits = Instant Goosebumps 🎧 Drop your favorite 90s "
     ],
-    "baseline_reach": 3392.5,
-    "baseline_views": 4139.0,
+    "baseline_reach": 3405.2,
+    "baseline_views": 4154.3,
     "baseline_engagement": 5.53,
     "niche_signal_hits": 947,
     "niche_confidence": 100
@@ -129,7 +129,7 @@
       "match_score": 89.3,
       "account_track_signal": {
         "matched_reels": 14,
-        "score": 59.9
+        "score": 59.8
       },
       "discovery_score": 91.4
     },
@@ -173,7 +173,7 @@
       "match_score": 84.8,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 27.0
+        "score": 26.9
       },
       "discovery_score": 86.3
     },
@@ -217,7 +217,7 @@
       "match_score": 81.6,
       "account_track_signal": {
         "matched_reels": 11,
-        "score": 22.8
+        "score": 22.7
       },
       "discovery_score": 75.3
     },
@@ -261,7 +261,7 @@
       "match_score": 78.2,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 39.1
+        "score": 39.0
       },
       "discovery_score": 45.0
     },
