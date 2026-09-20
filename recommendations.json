@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-20T06:29:34.915764+00:00",
+  "generated_at": "2026-09-20T12:29:39.609046+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -53,29 +53,29 @@
     "best_hours": [
       {
         "hour": 10,
-        "score": 16400.6
+        "score": 16414.5
       },
       {
         "hour": 13,
-        "score": 6050.3
+        "score": 6058.4
       },
       {
         "hour": 14,
-        "score": 2672.8
+        "score": 2673.8
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 5255.8
+        "score": 5257.6
       },
       {
         "day": "Monday",
-        "score": 4024.3
+        "score": 4028.5
       },
       {
         "day": "Saturday",
-        "score": 2516.9
+        "score": 2520.5
       }
     ],
     "top_captions": [
@@ -85,9 +85,9 @@
       "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match",
       "Kagaj kalam Daavat Mohammad Aziz + 90s Bollywood hits = Instant Goosebumps 🎧 Drop your favorite 90s "
     ],
-    "baseline_reach": 3386.1,
-    "baseline_views": 4131.2,
-    "baseline_engagement": 5.58,
+    "baseline_reach": 3389.3,
+    "baseline_views": 4134.0,
+    "baseline_engagement": 5.57,
     "niche_signal_hits": 977,
     "niche_confidence": 100
   },
@@ -106,8 +106,8 @@
       "10–13s lyric/payoff",
       "13–15s seamless loop"
     ],
-    "posting_hour_local": 13,
-    "next_posting_at_ist": "2026-09-20T13:00:00+05:30",
+    "posting_hour_local": 10,
+    "next_posting_at_ist": "2026-09-21T10:00:00+05:30",
     "audio_note": "Use the official Instagram audio page and confirm the original/official sound is available for this account before publishing."
   },
   "trending_audio_ranked": [
@@ -129,7 +129,7 @@
       "match_score": 89.1,
       "account_track_signal": {
         "matched_reels": 15,
-        "score": 57.4
+        "score": 57.5
       },
       "discovery_score": 91.4
     },
