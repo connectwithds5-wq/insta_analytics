@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T12:29:42.349702+00:00",
+  "generated_at": "2026-09-21T18:28:57.811091+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -53,29 +53,29 @@
     "best_hours": [
       {
         "hour": 10,
-        "score": 16450.1
+        "score": 16461.7
       },
       {
         "hour": 13,
-        "score": 6089.4
+        "score": 6096.8
       },
       {
         "hour": 14,
-        "score": 2676.1
+        "score": 2678.0
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 5261.9
+        "score": 5264.7
       },
       {
         "day": "Monday",
-        "score": 3846.0
+        "score": 3903.4
       },
       {
         "day": "Saturday",
-        "score": 2533.7
+        "score": 2537.2
       }
     ],
     "top_captions": [
@@ -85,9 +85,9 @@
       "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match",
       "Kagaj kalam Daavat Mohammad Aziz + 90s Bollywood hits = Instant Goosebumps 🎧 Drop your favorite 90s "
     ],
-    "baseline_reach": 3353.3,
-    "baseline_views": 4089.6,
-    "baseline_engagement": 5.6,
+    "baseline_reach": 3370.8,
+    "baseline_views": 4110.0,
+    "baseline_engagement": 5.58,
     "niche_signal_hits": 1005,
     "niche_confidence": 100
   },
@@ -129,7 +129,7 @@
       "match_score": 89.2,
       "account_track_signal": {
         "matched_reels": 15,
-        "score": 58.3
+        "score": 58.1
       },
       "discovery_score": 91.4
     },
@@ -173,7 +173,7 @@
       "match_score": 84.8,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 27.3
+        "score": 27.2
       },
       "discovery_score": 86.3
     },
@@ -217,7 +217,7 @@
       "match_score": 81.6,
       "account_track_signal": {
         "matched_reels": 11,
-        "score": 23.1
+        "score": 23.0
       },
       "discovery_score": 75.3
     },
@@ -280,10 +280,10 @@
       "observed_views": null,
       "niche_score": 100,
       "current_signal": "currently ranked on public Instagram trending-song discovery",
-      "match_score": 77.6,
+      "match_score": 77.7,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 33.6
+        "score": 34.1
       },
       "discovery_score": 45.0
     },
@@ -349,7 +349,7 @@
       "match_score": 73.9,
       "account_track_signal": {
         "matched_reels": 1,
-        "score": 21.3
+        "score": 21.2
       },
       "discovery_score": 45.0
     },
