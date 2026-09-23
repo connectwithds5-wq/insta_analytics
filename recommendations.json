@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T00:30:52.442418+00:00",
+  "generated_at": "2026-09-23T06:31:56.435784+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -49,33 +49,33 @@
     "default_strategy": "Niche fit first, account performance second, current discovery signal third."
   },
   "sample": {
-    "sample_size": 111,
+    "sample_size": 112,
     "best_hours": [
       {
         "hour": 10,
-        "score": 16485.4
+        "score": 16489.6
       },
       {
         "hour": 13,
-        "score": 6119.8
+        "score": 6122.9
       },
       {
         "hour": 14,
-        "score": 2679.9
+        "score": 2680.3
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 5269.8
+        "score": 5270.4
       },
       {
         "day": "Monday",
-        "score": 3925.2
+        "score": 3927.4
       },
       {
         "day": "Saturday",
-        "score": 2545.9
+        "score": 2547.3
       }
     ],
     "top_captions": [
@@ -85,10 +85,10 @@
       "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match",
       "Kagaj kalam Daavat Mohammad Aziz + 90s Bollywood hits = Instant Goosebumps 🎧 Drop your favorite 90s "
     ],
-    "baseline_reach": 3348.2,
-    "baseline_views": 4080.4,
-    "baseline_engagement": 5.54,
-    "niche_signal_hits": 1041,
+    "baseline_reach": 3322.1,
+    "baseline_views": 4049.3,
+    "baseline_engagement": 5.55,
+    "niche_signal_hits": 1057,
     "niche_confidence": 100
   },
   "primary_recommendation": {
@@ -106,8 +106,8 @@
       "10–13s lyric/payoff",
       "13–15s seamless loop"
     ],
-    "posting_hour_local": 10,
-    "next_posting_at_ist": "2026-09-23T10:00:00+05:30",
+    "posting_hour_local": 13,
+    "next_posting_at_ist": "2026-09-23T13:00:00+05:30",
     "audio_note": "Use the official Instagram audio page and confirm the original/official sound is available for this account before publishing."
   },
   "trending_audio_ranked": [
@@ -126,10 +126,10 @@
       "observed_views": 2500000,
       "niche_score": 100,
       "current_signal": "high observed reel views",
-      "match_score": 88.9,
+      "match_score": 89.0,
       "account_track_signal": {
         "matched_reels": 16,
-        "score": 55.9
+        "score": 56.4
       },
       "discovery_score": 91.4
     },
@@ -173,7 +173,7 @@
       "match_score": 84.8,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 27.4
+        "score": 27.6
       },
       "discovery_score": 86.3
     },
@@ -214,10 +214,10 @@
       "observed_views": 186200,
       "niche_score": 100,
       "current_signal": "observed reel views",
-      "match_score": 81.6,
+      "match_score": 81.7,
       "account_track_signal": {
         "matched_reels": 11,
-        "score": 23.2
+        "score": 23.4
       },
       "discovery_score": 75.3
     },
@@ -283,7 +283,7 @@
       "match_score": 77.2,
       "account_track_signal": {
         "matched_reels": 5,
-        "score": 29.4
+        "score": 30.0
       },
       "discovery_score": 45.0
     },
@@ -349,7 +349,7 @@
       "match_score": 73.9,
       "account_track_signal": {
         "matched_reels": 1,
-        "score": 21.4
+        "score": 21.5
       },
       "discovery_score": 45.0
     },
@@ -371,7 +371,7 @@
       "match_score": 73.7,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 19.4
+        "score": 19.6
       },
       "discovery_score": 45.0
     },
@@ -446,7 +446,7 @@
     {
       "song": "Do Dil Mil Rahe Hai",
       "artist": "Kumar Sanu",
-      "score": 88.9,
+      "score": 89.0,
       "format": "90s nostalgia",
       "era": "1990s",
       "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
