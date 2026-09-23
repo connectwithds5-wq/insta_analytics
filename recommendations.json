@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-23T12:31:24.434450+00:00",
+  "generated_at": "2026-09-23T18:29:52.705408+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -53,29 +53,29 @@
     "best_hours": [
       {
         "hour": 10,
-        "score": 16493.3
+        "score": 16502.1
       },
       {
         "hour": 13,
-        "score": 6126.8
+        "score": 6132.0
       },
       {
         "hour": 14,
-        "score": 2680.7
+        "score": 2681.1
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 5271.1
+        "score": 5272.8
       },
       {
         "day": "Monday",
-        "score": 3929.4
+        "score": 3932.6
       },
       {
         "day": "Saturday",
-        "score": 2548.9
+        "score": 2550.9
       }
     ],
     "top_captions": [
@@ -85,9 +85,9 @@
       "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match",
       "Kagaj kalam Daavat Mohammad Aziz + 90s Bollywood hits = Instant Goosebumps 🎧 Drop your favorite 90s "
     ],
-    "baseline_reach": 3296.9,
-    "baseline_views": 4019.6,
-    "baseline_engagement": 5.54,
+    "baseline_reach": 3299.9,
+    "baseline_views": 4024.6,
+    "baseline_engagement": 5.53,
     "niche_signal_hits": 1057,
     "niche_confidence": 100
   },
@@ -280,10 +280,10 @@
       "observed_views": null,
       "niche_score": 100,
       "current_signal": "currently ranked on public Instagram trending-song discovery",
-      "match_score": 77.3,
+      "match_score": 77.4,
       "account_track_signal": {
         "matched_reels": 5,
-        "score": 30.9
+        "score": 31.1
       },
       "discovery_score": 45.0
     },
