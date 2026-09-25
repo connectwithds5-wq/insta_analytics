@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-24T18:29:31.885391+00:00",
+  "generated_at": "2026-09-25T00:34:23.467692+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -53,29 +53,29 @@
     "best_hours": [
       {
         "hour": 10,
-        "score": 16526.1
+        "score": 16547.1
       },
       {
         "hour": 13,
-        "score": 6167.6
+        "score": 6174.4
       },
       {
         "hour": 14,
-        "score": 2711.5
+        "score": 2711.8
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 5278.6
+        "score": 5281.1
       },
       {
         "day": "Monday",
-        "score": 3944.5
+        "score": 3950.8
       },
       {
         "day": "Saturday",
-        "score": 2566.9
+        "score": 2569.6
       }
     ],
     "top_captions": [
@@ -85,9 +85,9 @@
       "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match",
       "Kagaj kalam Daavat Mohammad Aziz + 90s Bollywood hits = Instant Goosebumps 🎧 Drop your favorite 90s "
     ],
-    "baseline_reach": 3297.9,
-    "baseline_views": 4024.8,
-    "baseline_engagement": 5.57,
+    "baseline_reach": 3303.1,
+    "baseline_views": 4028.9,
+    "baseline_engagement": 5.62,
     "niche_signal_hits": 1074,
     "niche_confidence": 100
   },
@@ -170,10 +170,10 @@
       "observed_views": 1100000,
       "niche_score": 100,
       "current_signal": "high observed reel views",
-      "match_score": 84.9,
+      "match_score": 84.8,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 27.8
+        "score": 27.7
       },
       "discovery_score": 86.3
     },
@@ -349,7 +349,7 @@
       "match_score": 73.9,
       "account_track_signal": {
         "matched_reels": 1,
-        "score": 21.7
+        "score": 21.6
       },
       "discovery_score": 45.0
     },
@@ -371,7 +371,7 @@
       "match_score": 73.7,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 19.7
+        "score": 19.9
       },
       "discovery_score": 45.0
     },
@@ -462,7 +462,7 @@
     {
       "song": "Mere Mehboob Qayamat Hogi",
       "artist": "Kishore Kumar",
-      "score": 84.9,
+      "score": 84.8,
       "format": "nostalgia",
       "era": "1960s",
       "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
