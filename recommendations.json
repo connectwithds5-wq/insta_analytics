@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T00:34:23.467692+00:00",
+  "generated_at": "2026-09-25T06:32:10.229830+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -53,29 +53,29 @@
     "best_hours": [
       {
         "hour": 10,
-        "score": 16547.1
+        "score": 16553.8
       },
       {
         "hour": 13,
-        "score": 6174.4
+        "score": 6180.2
       },
       {
         "hour": 14,
-        "score": 2711.8
+        "score": 2711.9
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 5281.1
+        "score": 5282.4
       },
       {
         "day": "Monday",
-        "score": 3950.8
+        "score": 3952.4
       },
       {
         "day": "Saturday",
-        "score": 2569.6
+        "score": 2571.8
       }
     ],
     "top_captions": [
@@ -85,8 +85,8 @@
       "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match",
       "Kagaj kalam Daavat Mohammad Aziz + 90s Bollywood hits = Instant Goosebumps 🎧 Drop your favorite 90s "
     ],
-    "baseline_reach": 3303.1,
-    "baseline_views": 4028.9,
+    "baseline_reach": 3310.4,
+    "baseline_views": 4038.4,
     "baseline_engagement": 5.62,
     "niche_signal_hits": 1074,
     "niche_confidence": 100
@@ -106,8 +106,8 @@
       "10–13s lyric/payoff",
       "13–15s seamless loop"
     ],
-    "posting_hour_local": 10,
-    "next_posting_at_ist": "2026-09-25T10:00:00+05:30",
+    "posting_hour_local": 13,
+    "next_posting_at_ist": "2026-09-25T13:00:00+05:30",
     "audio_note": "Use the official Instagram audio page and confirm the original/official sound is available for this account before publishing."
   },
   "trending_audio_ranked": [
@@ -129,7 +129,7 @@
       "match_score": 89.1,
       "account_track_signal": {
         "matched_reels": 16,
-        "score": 57.4
+        "score": 57.3
       },
       "discovery_score": 91.4
     },
@@ -173,7 +173,7 @@
       "match_score": 84.8,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 27.7
+        "score": 27.6
       },
       "discovery_score": 86.3
     },
@@ -371,7 +371,7 @@
       "match_score": 73.7,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 19.9
+        "score": 19.8
       },
       "discovery_score": 45.0
     },
