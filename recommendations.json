@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-25T18:28:01.849997+00:00",
+  "generated_at": "2026-09-26T00:32:19.741932+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -53,11 +53,11 @@
     "best_hours": [
       {
         "hour": 10,
-        "score": 16577.8
+        "score": 16581.4
       },
       {
         "hour": 13,
-        "score": 6201.2
+        "score": 6204.1
       },
       {
         "hour": 14,
@@ -67,15 +67,15 @@
     "best_days": [
       {
         "day": "Friday",
-        "score": 5287.1
+        "score": 5287.7
       },
       {
         "day": "Monday",
-        "score": 3960.1
+        "score": 3961.1
       },
       {
         "day": "Saturday",
-        "score": 2579.9
+        "score": 2581.0
       }
     ],
     "top_captions": [
@@ -83,11 +83,11 @@
       "Pure retro magic in every frame. ✨ Sound on, feel the nostalgia! 🎶\n#EvergreenBollywood #OldSongs #Li",
       "Jiske liye sabko chhoda 💔 great music love old bollywood songs\n\nJiske liye sabko chhoda…\nusi ne mere",
       "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match",
-      "Kagaj kalam Daavat Mohammad Aziz + 90s Bollywood hits = Instant Goosebumps 🎧 Drop your favorite 90s "
+      "Dil me basa lo ❤️ \n\nDil mein basa lo… to shayad dil ko karar aa jayega ❤️🎶\nSome songs don’t just pla"
     ],
-    "baseline_reach": 3336.8,
-    "baseline_views": 4069.0,
-    "baseline_engagement": 5.69,
+    "baseline_reach": 3342.1,
+    "baseline_views": 4075.3,
+    "baseline_engagement": 5.7,
     "niche_signal_hits": 1074,
     "niche_confidence": 100
   },
@@ -129,7 +129,7 @@
       "match_score": 89.0,
       "account_track_signal": {
         "matched_reels": 16,
-        "score": 57.0
+        "score": 56.9
       },
       "discovery_score": 91.4
     },
@@ -371,7 +371,7 @@
       "match_score": 73.7,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 19.7
+        "score": 19.6
       },
       "discovery_score": 45.0
     },
