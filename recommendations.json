@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T12:34:16.783571+00:00",
+  "generated_at": "2026-09-28T18:31:27.090032+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -49,33 +49,33 @@
     "default_strategy": "Niche fit first, account performance second, current discovery signal third."
   },
   "sample": {
-    "sample_size": 115,
+    "sample_size": 116,
     "best_hours": [
       {
         "hour": 10,
-        "score": 16672.1
+        "score": 16681.7
       },
       {
         "hour": 13,
-        "score": 5293.3
+        "score": 5299.3
       },
       {
         "hour": 9,
-        "score": 2748.2
+        "score": 2835.2
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 5307.4
+        "score": 5308.8
       },
       {
         "day": "Monday",
-        "score": 3992.4
+        "score": 3806.5
       },
       {
         "day": "Thursday",
-        "score": 2739.4
+        "score": 2836.3
       }
     ],
     "top_captions": [
@@ -85,10 +85,10 @@
       "Jiske liye sabko chhoda 💔 great music love old bollywood songs\n\nJiske liye sabko chhoda…\nusi ne mere",
       "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match"
     ],
-    "baseline_reach": 3560.8,
-    "baseline_views": 4353.4,
-    "baseline_engagement": 5.68,
-    "niche_signal_hits": 1085,
+    "baseline_reach": 3555.7,
+    "baseline_views": 4343.9,
+    "baseline_engagement": 5.7,
+    "niche_signal_hits": 1095,
     "niche_confidence": 100
   },
   "primary_recommendation": {
@@ -129,7 +129,7 @@
       "match_score": 88.7,
       "account_track_signal": {
         "matched_reels": 16,
-        "score": 53.6
+        "score": 53.7
       },
       "discovery_score": 91.4
     },
@@ -173,7 +173,7 @@
       "match_score": 84.6,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 25.5
+        "score": 25.6
       },
       "discovery_score": 86.3
     },
@@ -283,7 +283,7 @@
       "match_score": 77.3,
       "account_track_signal": {
         "matched_reels": 5,
-        "score": 30.1
+        "score": 30.3
       },
       "discovery_score": 45.0
     },
@@ -349,7 +349,7 @@
       "match_score": 73.8,
       "account_track_signal": {
         "matched_reels": 1,
-        "score": 20.0
+        "score": 20.1
       },
       "discovery_score": 45.0
     },
@@ -371,7 +371,7 @@
       "match_score": 73.6,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 18.4
+        "score": 18.5
       },
       "discovery_score": 45.0
     },
