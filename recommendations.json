@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-29T00:34:17.632928+00:00",
+  "generated_at": "2026-09-29T06:33:07.470807+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -53,29 +53,29 @@
     "best_hours": [
       {
         "hour": 10,
-        "score": 16685.0
+        "score": 16687.7
       },
       {
         "hour": 13,
-        "score": 5300.5
+        "score": 5303.9
       },
       {
         "hour": 9,
-        "score": 2847.4
+        "score": 2894.3
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 5309.2
+        "score": 5310.2
       },
       {
         "day": "Monday",
-        "score": 3811.0
+        "score": 3815.3
       },
       {
         "day": "Thursday",
-        "score": 2849.7
+        "score": 2901.8
       }
     ],
     "top_captions": [
@@ -85,9 +85,9 @@
       "Jiske liye sabko chhoda 💔 great music love old bollywood songs\n\nJiske liye sabko chhoda…\nusi ne mere",
       "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match"
     ],
-    "baseline_reach": 3558.9,
-    "baseline_views": 4348.6,
-    "baseline_engagement": 5.72,
+    "baseline_reach": 3567.0,
+    "baseline_views": 4366.5,
+    "baseline_engagement": 5.73,
     "niche_signal_hits": 1095,
     "niche_confidence": 100
   },
@@ -106,8 +106,8 @@
       "10–13s lyric/payoff",
       "13–15s seamless loop"
     ],
-    "posting_hour_local": 9,
-    "next_posting_at_ist": "2026-09-29T09:00:00+05:30",
+    "posting_hour_local": 13,
+    "next_posting_at_ist": "2026-09-29T13:00:00+05:30",
     "audio_note": "Use the official Instagram audio page and confirm the original/official sound is available for this account before publishing."
   },
   "trending_audio_ranked": [
@@ -129,7 +129,7 @@
       "match_score": 88.7,
       "account_track_signal": {
         "matched_reels": 16,
-        "score": 53.7
+        "score": 53.5
       },
       "discovery_score": 91.4
     },
@@ -173,7 +173,7 @@
       "match_score": 84.6,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 25.6
+        "score": 25.5
       },
       "discovery_score": 86.3
     },
@@ -217,7 +217,7 @@
       "match_score": 81.5,
       "account_track_signal": {
         "matched_reels": 11,
-        "score": 21.9
+        "score": 21.8
       },
       "discovery_score": 75.3
     },
@@ -283,7 +283,7 @@
       "match_score": 77.3,
       "account_track_signal": {
         "matched_reels": 5,
-        "score": 30.3
+        "score": 30.2
       },
       "discovery_score": 45.0
     },
@@ -371,7 +371,7 @@
       "match_score": 73.6,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 18.5
+        "score": 18.4
       },
       "discovery_score": 45.0
     },
