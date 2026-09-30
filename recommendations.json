@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T06:33:51.682704+00:00",
+  "generated_at": "2026-09-30T12:37:38.089033+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -53,29 +53,29 @@
     "best_hours": [
       {
         "hour": 10,
-        "score": 16713.4
+        "score": 16726.6
       },
       {
         "hour": 13,
-        "score": 5313.4
+        "score": 5315.6
       },
       {
         "hour": 9,
-        "score": 3005.4
+        "score": 3026.5
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 5314.2
+        "score": 5319.2
       },
       {
         "day": "Monday",
-        "score": 3831.6
+        "score": 3833.1
       },
       {
         "day": "Thursday",
-        "score": 3025.5
+        "score": 3049.8
       }
     ],
     "top_captions": [
@@ -85,9 +85,9 @@
       "Jiske liye sabko chhoda 💔 great music love old bollywood songs\n\nJiske liye sabko chhoda…\nusi ne mere",
       "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match"
     ],
-    "baseline_reach": 3571.2,
-    "baseline_views": 4372.1,
-    "baseline_engagement": 5.85,
+    "baseline_reach": 3580.0,
+    "baseline_views": 4380.8,
+    "baseline_engagement": 5.84,
     "niche_signal_hits": 1120,
     "niche_confidence": 100
   },
@@ -106,8 +106,8 @@
       "10–13s lyric/payoff",
       "13–15s seamless loop"
     ],
-    "posting_hour_local": 13,
-    "next_posting_at_ist": "2026-09-30T13:00:00+05:30",
+    "posting_hour_local": 9,
+    "next_posting_at_ist": "2026-10-01T09:00:00+05:30",
     "audio_note": "Use the official Instagram audio page and confirm the original/official sound is available for this account before publishing."
   },
   "trending_audio_ranked": [
@@ -371,7 +371,7 @@
       "match_score": 73.6,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 18.4
+        "score": 18.3
       },
       "discovery_score": 45.0
     },
