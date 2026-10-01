@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T06:35:45.381217+00:00",
+  "generated_at": "2026-10-01T12:35:57.312145+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -49,33 +49,33 @@
     "default_strategy": "Niche fit first, account performance second, current discovery signal third."
   },
   "sample": {
-    "sample_size": 118,
+    "sample_size": 119,
     "best_hours": [
       {
         "hour": 10,
-        "score": 16744.0
+        "score": 16747.5
       },
       {
         "hour": 13,
-        "score": 5320.4
+        "score": 5322.7
       },
       {
         "hour": 9,
-        "score": 3071.2
+        "score": 3087.2
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 5323.8
+        "score": 5324.4
       },
       {
         "day": "Monday",
-        "score": 3837.2
+        "score": 3838.4
       },
       {
         "day": "Thursday",
-        "score": 3100.5
+        "score": 2954.8
       }
     ],
     "top_captions": [
@@ -85,9 +85,9 @@
       "Jiske liye sabko chhoda 💔 great music love old bollywood songs\n\nJiske liye sabko chhoda…\nusi ne mere",
       "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match"
     ],
-    "baseline_reach": 3565.6,
-    "baseline_views": 4362.8,
-    "baseline_engagement": 5.86,
+    "baseline_reach": 3541.2,
+    "baseline_views": 4330.4,
+    "baseline_engagement": 5.81,
     "niche_signal_hits": 1120,
     "niche_confidence": 100
   },
@@ -106,8 +106,8 @@
       "10–13s lyric/payoff",
       "13–15s seamless loop"
     ],
-    "posting_hour_local": 13,
-    "next_posting_at_ist": "2026-10-01T13:00:00+05:30",
+    "posting_hour_local": 9,
+    "next_posting_at_ist": "2026-10-02T09:00:00+05:30",
     "audio_note": "Use the official Instagram audio page and confirm the original/official sound is available for this account before publishing."
   },
   "trending_audio_ranked": [
@@ -126,10 +126,10 @@
       "observed_views": 2500000,
       "niche_score": 100,
       "current_signal": "high observed reel views",
-      "match_score": 88.4,
+      "match_score": 88.5,
       "account_track_signal": {
         "matched_reels": 17,
-        "score": 51.0
+        "score": 51.4
       },
       "discovery_score": 91.4
     },
@@ -173,7 +173,7 @@
       "match_score": 84.6,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 25.5
+        "score": 25.7
       },
       "discovery_score": 86.3
     },
@@ -217,7 +217,7 @@
       "match_score": 81.5,
       "account_track_signal": {
         "matched_reels": 11,
-        "score": 21.9
+        "score": 22.0
       },
       "discovery_score": 75.3
     },
@@ -283,7 +283,7 @@
       "match_score": 77.3,
       "account_track_signal": {
         "matched_reels": 5,
-        "score": 30.5
+        "score": 30.8
       },
       "discovery_score": 45.0
     },
@@ -349,7 +349,7 @@
       "match_score": 73.8,
       "account_track_signal": {
         "matched_reels": 1,
-        "score": 20.0
+        "score": 20.1
       },
       "discovery_score": 45.0
     },
@@ -371,7 +371,7 @@
       "match_score": 73.6,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 18.4
+        "score": 18.6
       },
       "discovery_score": 45.0
     },
@@ -446,7 +446,7 @@
     {
       "song": "Do Dil Mil Rahe Hai",
       "artist": "Kumar Sanu",
-      "score": 88.4,
+      "score": 88.5,
       "format": "90s nostalgia",
       "era": "1990s",
       "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
