@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T06:33:59.695549+00:00",
+  "generated_at": "2026-10-02T12:34:27.755221+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -49,33 +49,33 @@
     "default_strategy": "Niche fit first, account performance second, current discovery signal third."
   },
   "sample": {
-    "sample_size": 119,
+    "sample_size": 120,
     "best_hours": [
       {
         "hour": 10,
-        "score": 16759.2
+        "score": 16762.9
       },
       {
         "hour": 13,
-        "score": 5330.9
+        "score": 5337.6
       },
       {
         "hour": 9,
-        "score": 3108.6
+        "score": 3115.9
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 5325.7
+        "score": 5005.0
       },
       {
         "day": "Monday",
-        "score": 3843.3
+        "score": 3844.4
       },
       {
         "day": "Thursday",
-        "score": 2984.5
+        "score": 2992.4
       }
     ],
     "top_captions": [
@@ -85,10 +85,10 @@
       "Jiske liye sabko chhoda 💔 great music love old bollywood songs\n\nJiske liye sabko chhoda…\nusi ne mere",
       "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match"
     ],
-    "baseline_reach": 3548.6,
-    "baseline_views": 4342.2,
+    "baseline_reach": 3523.8,
+    "baseline_views": 4311.8,
     "baseline_engagement": 5.88,
-    "niche_signal_hits": 1120,
+    "niche_signal_hits": 1122,
     "niche_confidence": 100
   },
   "primary_recommendation": {
@@ -106,8 +106,8 @@
       "10–13s lyric/payoff",
       "13–15s seamless loop"
     ],
-    "posting_hour_local": 13,
-    "next_posting_at_ist": "2026-10-02T13:00:00+05:30",
+    "posting_hour_local": 9,
+    "next_posting_at_ist": "2026-10-03T09:00:00+05:30",
     "audio_note": "Use the official Instagram audio page and confirm the original/official sound is available for this account before publishing."
   },
   "trending_audio_ranked": [
@@ -129,7 +129,7 @@
       "match_score": 88.5,
       "account_track_signal": {
         "matched_reels": 17,
-        "score": 51.4
+        "score": 51.8
       },
       "discovery_score": 91.4
     },
@@ -170,10 +170,10 @@
       "observed_views": 1100000,
       "niche_score": 100,
       "current_signal": "high observed reel views",
-      "match_score": 84.6,
+      "match_score": 84.7,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 25.6
+        "score": 25.8
       },
       "discovery_score": 86.3
     },
@@ -217,7 +217,7 @@
       "match_score": 81.5,
       "account_track_signal": {
         "matched_reels": 11,
-        "score": 22.0
+        "score": 22.1
       },
       "discovery_score": 75.3
     },
@@ -283,7 +283,7 @@
       "match_score": 77.3,
       "account_track_signal": {
         "matched_reels": 5,
-        "score": 30.8
+        "score": 31.0
       },
       "discovery_score": 45.0
     },
@@ -349,7 +349,7 @@
       "match_score": 73.8,
       "account_track_signal": {
         "matched_reels": 1,
-        "score": 20.1
+        "score": 20.2
       },
       "discovery_score": 45.0
     },
@@ -371,7 +371,7 @@
       "match_score": 73.6,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 18.5
+        "score": 18.6
       },
       "discovery_score": 45.0
     },
@@ -462,7 +462,7 @@
     {
       "song": "Mere Mehboob Qayamat Hogi",
       "artist": "Kishore Kumar",
-      "score": 84.6,
+      "score": 84.7,
       "format": "nostalgia",
       "era": "1960s",
       "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
