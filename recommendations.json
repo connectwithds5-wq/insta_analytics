@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-02T12:34:27.755221+00:00",
+  "generated_at": "2026-10-02T18:32:23.714195+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -53,29 +53,29 @@
     "best_hours": [
       {
         "hour": 10,
-        "score": 16762.9
+        "score": 16767.5
       },
       {
         "hour": 13,
-        "score": 5337.6
+        "score": 5340.4
       },
       {
         "hour": 9,
-        "score": 3115.9
+        "score": 3121.6
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 5005.0
+        "score": 5037.1
       },
       {
         "day": "Monday",
-        "score": 3844.4
+        "score": 3845.8
       },
       {
         "day": "Thursday",
-        "score": 2992.4
+        "score": 2998.7
       }
     ],
     "top_captions": [
@@ -85,9 +85,9 @@
       "Jiske liye sabko chhoda 💔 great music love old bollywood songs\n\nJiske liye sabko chhoda…\nusi ne mere",
       "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match"
     ],
-    "baseline_reach": 3523.8,
-    "baseline_views": 4311.8,
-    "baseline_engagement": 5.88,
+    "baseline_reach": 3531.1,
+    "baseline_views": 4322.2,
+    "baseline_engagement": 5.87,
     "niche_signal_hits": 1122,
     "niche_confidence": 100
   },
@@ -129,7 +129,7 @@
       "match_score": 88.5,
       "account_track_signal": {
         "matched_reels": 17,
-        "score": 51.8
+        "score": 51.7
       },
       "discovery_score": 91.4
     },
@@ -170,10 +170,10 @@
       "observed_views": 1100000,
       "niche_score": 100,
       "current_signal": "high observed reel views",
-      "match_score": 84.7,
+      "match_score": 84.6,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 25.8
+        "score": 25.7
       },
       "discovery_score": 86.3
     },
@@ -462,7 +462,7 @@
     {
       "song": "Mere Mehboob Qayamat Hogi",
       "artist": "Kishore Kumar",
-      "score": 84.7,
+      "score": 84.6,
       "format": "nostalgia",
       "era": "1960s",
       "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
