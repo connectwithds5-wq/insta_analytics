@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T18:34:08.752554+00:00",
+  "generated_at": "2026-10-02T00:35:54.358366+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -53,29 +53,29 @@
     "best_hours": [
       {
         "hour": 10,
-        "score": 16753.6
+        "score": 16755.8
       },
       {
         "hour": 13,
-        "score": 5328.1
+        "score": 5328.6
       },
       {
         "hour": 9,
-        "score": 3099.2
+        "score": 3101.7
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 5325.1
+        "score": 5325.5
       },
       {
         "day": "Monday",
-        "score": 3841.3
+        "score": 3841.9
       },
       {
         "day": "Thursday",
-        "score": 2974.1
+        "score": 2976.8
       }
     ],
     "top_captions": [
@@ -85,8 +85,8 @@
       "Jiske liye sabko chhoda 💔 great music love old bollywood songs\n\nJiske liye sabko chhoda…\nusi ne mere",
       "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match"
     ],
-    "baseline_reach": 3546.5,
-    "baseline_views": 4338.1,
+    "baseline_reach": 3546.8,
+    "baseline_views": 4339.0,
     "baseline_engagement": 5.89,
     "niche_signal_hits": 1120,
     "niche_confidence": 100
