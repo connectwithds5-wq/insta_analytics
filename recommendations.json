@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-07T13:20:12.016708+00:00",
+  "generated_at": "2026-10-07T23:04:34.659414+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -53,41 +53,41 @@
     "best_hours": [
       {
         "hour": 10,
-        "score": 16835.0
+        "score": 16850.9
       },
       {
         "hour": 13,
-        "score": 5395.1
+        "score": 5409.6
       },
       {
         "hour": 9,
-        "score": 3087.6
+        "score": 3102.0
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 5076.4
+        "score": 5083.1
       },
       {
         "day": "Monday",
-        "score": 3867.2
+        "score": 3877.7
       },
       {
         "day": "Thursday",
-        "score": 3112.7
+        "score": 3128.7
       }
     ],
     "top_captions": [
       "The heart that doesn't have you in it... isn't really mine 💔🚗\n90s heartbreak hits different 🎶\n\nLip s",
       "Pure retro magic in every frame. ✨ Sound on, feel the nostalgia! 🎶\n#EvergreenBollywood #OldSongs #Li",
       "Dil me basa lo ❤️ \n\nDil mein basa lo… to shayad dil ko karar aa jayega ❤️🎶\nSome songs don’t just pla",
-      "Jiske liye sabko chhoda 💔 great music love old bollywood songs\n\nJiske liye sabko chhoda…\nusi ne mere",
-      "Falak roke, zameen roke... magar hum ruk na payenge.\" Channeling peak 90s energy! 💫❤️\n\nNothing match"
+      "❤️ Nazar mein tu… jigar mein tu…\nJahan dekhu, bas tu hi tu… 🫶✨\n\nKuch log aankhon se nahi, dil se dek",
+      "Jiske liye sabko chhoda 💔 great music love old bollywood songs\n\nJiske liye sabko chhoda…\nusi ne mere"
     ],
-    "baseline_reach": 3586.9,
-    "baseline_views": 4407.6,
-    "baseline_engagement": 5.9,
+    "baseline_reach": 3872.5,
+    "baseline_views": 4681.3,
+    "baseline_engagement": 6.02,
     "niche_signal_hits": 1127,
     "niche_confidence": 100
   },
@@ -126,10 +126,10 @@
       "observed_views": 2500000,
       "niche_score": 100,
       "current_signal": "high observed reel views",
-      "match_score": 88.5,
+      "match_score": 88.2,
       "account_track_signal": {
         "matched_reels": 17,
-        "score": 51.2
+        "score": 48.1
       },
       "discovery_score": 91.4
     },
@@ -170,10 +170,10 @@
       "observed_views": 1100000,
       "niche_score": 100,
       "current_signal": "high observed reel views",
-      "match_score": 84.6,
+      "match_score": 84.4,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 25.3
+        "score": 23.7
       },
       "discovery_score": 86.3
     },
@@ -214,10 +214,10 @@
       "observed_views": 186200,
       "niche_score": 100,
       "current_signal": "observed reel views",
-      "match_score": 81.5,
+      "match_score": 81.4,
       "account_track_signal": {
         "matched_reels": 11,
-        "score": 21.8
+        "score": 20.4
       },
       "discovery_score": 75.3
     },
@@ -280,10 +280,10 @@
       "observed_views": null,
       "niche_score": 100,
       "current_signal": "currently ranked on public Instagram trending-song discovery",
-      "match_score": 77.3,
+      "match_score": 77.2,
       "account_track_signal": {
         "matched_reels": 5,
-        "score": 30.9
+        "score": 29.1
       },
       "discovery_score": 45.0
     },
@@ -346,10 +346,10 @@
       "observed_views": null,
       "niche_score": 100,
       "current_signal": "appears in current old-song Reel discovery playlists",
-      "match_score": 73.7,
+      "match_score": 73.6,
       "account_track_signal": {
         "matched_reels": 1,
-        "score": 19.8
+        "score": 18.6
       },
       "discovery_score": 45.0
     },
@@ -368,10 +368,10 @@
       "observed_views": null,
       "niche_score": 100,
       "current_signal": "appears in current old-song Reel discovery playlists",
-      "match_score": 73.6,
+      "match_score": 73.5,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 18.3
+        "score": 17.2
       },
       "discovery_score": 45.0
     },
@@ -446,7 +446,7 @@
     {
       "song": "Do Dil Mil Rahe Hai",
       "artist": "Kumar Sanu",
-      "score": 88.5,
+      "score": 88.2,
       "format": "90s nostalgia",
       "era": "1990s",
       "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
@@ -462,7 +462,7 @@
     {
       "song": "Mere Mehboob Qayamat Hogi",
       "artist": "Kishore Kumar",
-      "score": 84.6,
+      "score": 84.4,
       "format": "nostalgia",
       "era": "1960s",
       "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
