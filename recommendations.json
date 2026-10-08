@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-08T13:26:25.271987+00:00",
+  "generated_at": "2026-10-08T23:20:00.665115+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -53,29 +53,29 @@
     "best_hours": [
       {
         "hour": 10,
-        "score": 16868.2
+        "score": 16882.7
       },
       {
         "hour": 13,
-        "score": 5439.3
+        "score": 5451.1
       },
       {
         "hour": 8,
-        "score": 4589.7
+        "score": 5198.9
       }
     ],
     "best_days": [
       {
-        "day": "Friday",
-        "score": 5096.2
+        "day": "Wednesday",
+        "score": 5416.1
       },
       {
-        "day": "Wednesday",
-        "score": 4781.4
+        "day": "Friday",
+        "score": 5101.2
       },
       {
         "day": "Monday",
-        "score": 3892.4
+        "score": 3899.5
       }
     ],
     "top_captions": [
@@ -85,9 +85,9 @@
       "Dil me basa lo ❤️ \n\nDil mein basa lo… to shayad dil ko karar aa jayega ❤️🎶\nSome songs don’t just pla",
       "Jiske liye sabko chhoda 💔 great music love old bollywood songs\n\nJiske liye sabko chhoda…\nusi ne mere"
     ],
-    "baseline_reach": 4304.1,
-    "baseline_views": 5218.5,
-    "baseline_engagement": 6.24,
+    "baseline_reach": 4456.1,
+    "baseline_views": 5393.7,
+    "baseline_engagement": 6.22,
     "niche_signal_hits": 1127,
     "niche_confidence": 100
   },
@@ -126,10 +126,10 @@
       "observed_views": 2500000,
       "niche_score": 100,
       "current_signal": "high observed reel views",
-      "match_score": 87.7,
+      "match_score": 87.6,
       "account_track_signal": {
         "matched_reels": 17,
-        "score": 43.5
+        "score": 42.1
       },
       "discovery_score": 91.4
     },
@@ -156,28 +156,6 @@
       "discovery_score": 97.9
     },
     {
-      "rank": 4,
-      "title": "Mere Mehboob Qayamat Hogi",
-      "artist": "Kishore Kumar",
-      "movie": "Mr. X in Bombay",
-      "era": "1960s",
-      "lane": "Retro Bollywood",
-      "formats": [
-        "nostalgia",
-        "heartbreak",
-        "lyrics"
-      ],
-      "observed_views": 1100000,
-      "niche_score": 100,
-      "current_signal": "high observed reel views",
-      "match_score": 84.2,
-      "account_track_signal": {
-        "matched_reels": 2,
-        "score": 21.2
-      },
-      "discovery_score": 86.3
-    },
-    {
       "rank": 2,
       "title": "Mera Jeevan Kora Kagaz",
       "artist": "Kishore Kumar",
@@ -200,6 +178,28 @@
       "discovery_score": 94.5
     },
     {
+      "rank": 4,
+      "title": "Mere Mehboob Qayamat Hogi",
+      "artist": "Kishore Kumar",
+      "movie": "Mr. X in Bombay",
+      "era": "1960s",
+      "lane": "Retro Bollywood",
+      "formats": [
+        "nostalgia",
+        "heartbreak",
+        "lyrics"
+      ],
+      "observed_views": 1100000,
+      "niche_score": 100,
+      "current_signal": "high observed reel views",
+      "match_score": 84.1,
+      "account_track_signal": {
+        "matched_reels": 2,
+        "score": 20.5
+      },
+      "discovery_score": 86.3
+    },
+    {
       "rank": 6,
       "title": "Yeh Raaten Yeh Mausam",
       "artist": "Asha Bhosle, Kishore Kumar",
@@ -214,10 +214,10 @@
       "observed_views": 186200,
       "niche_score": 100,
       "current_signal": "observed reel views",
-      "match_score": 81.2,
+      "match_score": 81.1,
       "account_track_signal": {
         "matched_reels": 11,
-        "score": 18.4
+        "score": 17.8
       },
       "discovery_score": 75.3
     },
@@ -280,10 +280,10 @@
       "observed_views": null,
       "niche_score": 100,
       "current_signal": "currently ranked on public Instagram trending-song discovery",
-      "match_score": 76.9,
+      "match_score": 76.8,
       "account_track_signal": {
         "matched_reels": 5,
-        "score": 26.5
+        "score": 25.7
       },
       "discovery_score": 45.0
     },
@@ -349,7 +349,7 @@
       "match_score": 73.4,
       "account_track_signal": {
         "matched_reels": 1,
-        "score": 16.7
+        "score": 16.1
       },
       "discovery_score": 45.0
     },
@@ -368,10 +368,10 @@
       "observed_views": null,
       "niche_score": 100,
       "current_signal": "appears in current old-song Reel discovery playlists",
-      "match_score": 73.3,
+      "match_score": 73.2,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 15.5
+        "score": 15.0
       },
       "discovery_score": 45.0
     },
@@ -446,7 +446,7 @@
     {
       "song": "Do Dil Mil Rahe Hai",
       "artist": "Kumar Sanu",
-      "score": 87.7,
+      "score": 87.6,
       "format": "90s nostalgia",
       "era": "1990s",
       "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
@@ -460,19 +460,19 @@
       "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
     },
     {
-      "song": "Mere Mehboob Qayamat Hogi",
-      "artist": "Kishore Kumar",
-      "score": 84.2,
-      "format": "nostalgia",
-      "era": "1960s",
-      "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
-    },
-    {
       "song": "Mera Jeevan Kora Kagaz",
       "artist": "Kishore Kumar",
       "score": 84.1,
       "format": "sad story",
       "era": "1970s",
+      "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
+    },
+    {
+      "song": "Mere Mehboob Qayamat Hogi",
+      "artist": "Kishore Kumar",
+      "score": 84.1,
+      "format": "nostalgia",
+      "era": "1960s",
       "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
     }
   ],
