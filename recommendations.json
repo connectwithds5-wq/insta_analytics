@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-09T13:14:11.367679+00:00",
+  "generated_at": "2026-10-09T22:37:14.842453+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -53,29 +53,29 @@
     "best_hours": [
       {
         "hour": 10,
-        "score": 16901.6
-      },
-      {
-        "hour": 8,
-        "score": 5514.0
+        "score": 16915.4
       },
       {
         "hour": 13,
-        "score": 5279.4
+        "score": 7387.7
+      },
+      {
+        "hour": 8,
+        "score": 5694.9
       }
     ],
     "best_days": [
       {
         "day": "Wednesday",
-        "score": 5741.5
+        "score": 5927.3
       },
       {
         "day": "Friday",
-        "score": 5053.8
+        "score": 5923.2
       },
       {
         "day": "Monday",
-        "score": 3908.8
+        "score": 3919.7
       }
     ],
     "top_captions": [
@@ -85,9 +85,9 @@
       "Dil me basa lo ❤️ \n\nDil mein basa lo… to shayad dil ko karar aa jayega ❤️🎶\nSome songs don’t just pla",
       "Jiske liye sabko chhoda 💔 great music love old bollywood songs\n\nJiske liye sabko chhoda…\nusi ne mere"
     ],
-    "baseline_reach": 4538.8,
-    "baseline_views": 5509.6,
-    "baseline_engagement": 6.33,
+    "baseline_reach": 4750.5,
+    "baseline_views": 5772.6,
+    "baseline_engagement": 6.32,
     "niche_signal_hits": 1128,
     "niche_confidence": 100
   },
@@ -126,10 +126,10 @@
       "observed_views": 2500000,
       "niche_score": 100,
       "current_signal": "high observed reel views",
-      "match_score": 87.5,
+      "match_score": 87.3,
       "account_track_signal": {
         "matched_reels": 17,
-        "score": 41.4
+        "score": 39.8
       },
       "discovery_score": 91.4
     },
@@ -192,12 +192,34 @@
       "observed_views": 1100000,
       "niche_score": 100,
       "current_signal": "high observed reel views",
-      "match_score": 84.1,
+      "match_score": 84.0,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 20.1
+        "score": 19.2
       },
       "discovery_score": 86.3
+    },
+    {
+      "rank": 9,
+      "title": "Pal Pal Dil Ke Paas",
+      "artist": "Kishore Kumar",
+      "movie": "Blackmail",
+      "era": "1970s",
+      "lane": "Retro Bollywood",
+      "formats": [
+        "romantic story",
+        "evergreen love",
+        "nostalgia"
+      ],
+      "observed_views": null,
+      "niche_score": 100,
+      "current_signal": "appears in current 90s/old-song Reel discovery playlists",
+      "match_score": 81.8,
+      "account_track_signal": {
+        "matched_reels": 1,
+        "score": 100
+      },
+      "discovery_score": 45.0
     },
     {
       "rank": 6,
@@ -214,10 +236,10 @@
       "observed_views": 186200,
       "niche_score": 100,
       "current_signal": "observed reel views",
-      "match_score": 81.1,
+      "match_score": 81.0,
       "account_track_signal": {
         "matched_reels": 11,
-        "score": 17.5
+        "score": 16.7
       },
       "discovery_score": 75.3
     },
@@ -242,28 +264,6 @@
         "score": 0
       },
       "discovery_score": 81.7
-    },
-    {
-      "rank": 9,
-      "title": "Pal Pal Dil Ke Paas",
-      "artist": "Kishore Kumar",
-      "movie": "Blackmail",
-      "era": "1970s",
-      "lane": "Retro Bollywood",
-      "formats": [
-        "romantic story",
-        "evergreen love",
-        "nostalgia"
-      ],
-      "observed_views": null,
-      "niche_score": 100,
-      "current_signal": "appears in current 90s/old-song Reel discovery playlists",
-      "match_score": 77.9,
-      "account_track_signal": {
-        "matched_reels": 1,
-        "score": 61.9
-      },
-      "discovery_score": 45.0
     },
     {
       "rank": 7,
@@ -302,10 +302,10 @@
       "observed_views": null,
       "niche_score": 100,
       "current_signal": "currently ranked on public Instagram trending-song discovery",
-      "match_score": 76.8,
+      "match_score": 76.7,
       "account_track_signal": {
         "matched_reels": 5,
-        "score": 25.5
+        "score": 24.6
       },
       "discovery_score": 45.0
     },
@@ -371,7 +371,7 @@
       "match_score": 73.3,
       "account_track_signal": {
         "matched_reels": 1,
-        "score": 15.8
+        "score": 15.1
       },
       "discovery_score": 45.0
     },
@@ -393,7 +393,7 @@
       "match_score": 73.2,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 14.7
+        "score": 14.1
       },
       "discovery_score": 45.0
     },
@@ -446,7 +446,7 @@
     {
       "song": "Do Dil Mil Rahe Hai",
       "artist": "Kumar Sanu",
-      "score": 87.5,
+      "score": 87.3,
       "format": "90s nostalgia",
       "era": "1990s",
       "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
@@ -470,7 +470,7 @@
     {
       "song": "Mere Mehboob Qayamat Hogi",
       "artist": "Kishore Kumar",
-      "score": 84.1,
+      "score": 84.0,
       "format": "nostalgia",
       "era": "1960s",
       "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
