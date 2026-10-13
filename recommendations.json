@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T15:20:04.404620+00:00",
+  "generated_at": "2026-10-13T00:38:01.226627+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -53,29 +53,29 @@
     "best_hours": [
       {
         "hour": 13,
-        "score": 26824.0
+        "score": 26978.4
       },
       {
         "hour": 10,
-        "score": 16985.3
+        "score": 16988.9
       },
       {
         "hour": 8,
-        "score": 6247.5
+        "score": 6269.1
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 13939.5
+        "score": 14003.7
       },
       {
         "day": "Wednesday",
-        "score": 6471.4
+        "score": 6488.5
       },
       {
         "day": "Monday",
-        "score": 4014.8
+        "score": 4154.5
       }
     ],
     "top_captions": [
@@ -85,9 +85,9 @@
       "Pure retro magic in every frame. ✨ Sound on, feel the nostalgia! 🎶\n#EvergreenBollywood #OldSongs #Li",
       "Dil me basa lo ❤️ \n\nDil mein basa lo… to shayad dil ko karar aa jayega ❤️🎶\nSome songs don’t just pla"
     ],
-    "baseline_reach": 6584.4,
-    "baseline_views": 7894.9,
-    "baseline_engagement": 6.46,
+    "baseline_reach": 6649.3,
+    "baseline_views": 7967.9,
+    "baseline_engagement": 6.45,
     "niche_signal_hits": 1143,
     "niche_confidence": 100
   },
@@ -126,10 +126,10 @@
       "observed_views": 2500000,
       "niche_score": 100,
       "current_signal": "high observed reel views",
-      "match_score": 86.4,
+      "match_score": 86.6,
       "account_track_signal": {
         "matched_reels": 18,
-        "score": 31.0
+        "score": 32.4
       },
       "discovery_score": 91.4
     },
@@ -195,7 +195,7 @@
       "match_score": 83.5,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 14.1
+        "score": 13.9
       },
       "discovery_score": 86.3
     },
@@ -261,7 +261,7 @@
       "match_score": 80.6,
       "account_track_signal": {
         "matched_reels": 11,
-        "score": 12.4
+        "score": 12.3
       },
       "discovery_score": 75.3
     },
@@ -305,7 +305,7 @@
       "match_score": 76.2,
       "account_track_signal": {
         "matched_reels": 5,
-        "score": 19.7
+        "score": 19.6
       },
       "discovery_score": 45.0
     },
@@ -368,10 +368,10 @@
       "observed_views": null,
       "niche_score": 100,
       "current_signal": "appears in current old-song Reel discovery playlists",
-      "match_score": 72.9,
+      "match_score": 72.8,
       "account_track_signal": {
         "matched_reels": 1,
-        "score": 11.2
+        "score": 11.0
       },
       "discovery_score": 45.0
     },
@@ -393,7 +393,7 @@
       "match_score": 72.8,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 10.5
+        "score": 10.4
       },
       "discovery_score": 45.0
     },
@@ -446,7 +446,7 @@
     {
       "song": "Do Dil Mil Rahe Hai",
       "artist": "Kumar Sanu",
-      "score": 86.4,
+      "score": 86.6,
       "format": "90s nostalgia",
       "era": "1990s",
       "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
