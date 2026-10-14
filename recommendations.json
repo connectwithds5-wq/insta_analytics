@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-14T17:08:45.215289+00:00",
+  "generated_at": "2026-10-14T21:40:09.140059+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -53,29 +53,29 @@
     "best_hours": [
       {
         "hour": 13,
-        "score": 27766.7
+        "score": 27806.5
       },
       {
         "hour": 10,
-        "score": 17007.7
+        "score": 17009.7
       },
       {
         "hour": 8,
-        "score": 5907.6
+        "score": 5918.8
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 14330.1
+        "score": 14346.4
       },
       {
         "day": "Wednesday",
-        "score": 6136.9
+        "score": 6167.1
       },
       {
         "day": "Monday",
-        "score": 4307.8
+        "score": 4311.2
       }
     ],
     "top_captions": [
@@ -85,9 +85,9 @@
       "Pure retro magic in every frame. ✨ Sound on, feel the nostalgia! 🎶\n#EvergreenBollywood #OldSongs #Li",
       "Dil me basa lo ❤️ \n\nDil mein basa lo… to shayad dil ko karar aa jayega ❤️🎶\nSome songs don’t just pla"
     ],
-    "baseline_reach": 6690.9,
-    "baseline_views": 8015.6,
-    "baseline_engagement": 6.5,
+    "baseline_reach": 6705.5,
+    "baseline_views": 8030.8,
+    "baseline_engagement": 6.49,
     "niche_signal_hits": 1150,
     "niche_confidence": 100
   },
@@ -129,7 +129,7 @@
       "match_score": 86.8,
       "account_track_signal": {
         "matched_reels": 18,
-        "score": 34.1
+        "score": 34.0
       },
       "discovery_score": 91.4
     },
@@ -195,7 +195,7 @@
       "match_score": 83.5,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 13.9
+        "score": 13.8
       },
       "discovery_score": 86.3
     },
@@ -217,7 +217,7 @@
       "match_score": 82.8,
       "account_track_signal": {
         "matched_reels": 1,
-        "score": 18.3
+        "score": 18.7
       },
       "discovery_score": 81.7
     },
