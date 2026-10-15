@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-15T04:35:30.728932+00:00",
+  "generated_at": "2026-10-15T11:26:05.523045+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -49,33 +49,33 @@
     "default_strategy": "Niche fit first, account performance second, current discovery signal third."
   },
   "sample": {
-    "sample_size": 129,
+    "sample_size": 130,
     "best_hours": [
       {
         "hour": 13,
-        "score": 27825.9
+        "score": 27888.9
       },
       {
         "hour": 10,
-        "score": 17015.4
+        "score": 17021.1
       },
       {
         "hour": 8,
-        "score": 5926.8
+        "score": 5937.8
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 14354.5
+        "score": 14380.0
       },
       {
         "day": "Wednesday",
-        "score": 6193.9
+        "score": 6232.6
       },
       {
         "day": "Monday",
-        "score": 4314.6
+        "score": 4319.3
       }
     ],
     "top_captions": [
@@ -85,10 +85,10 @@
       "Pure retro magic in every frame. ✨ Sound on, feel the nostalgia! 🎶\n#EvergreenBollywood #OldSongs #Li",
       "Dil me basa lo ❤️ \n\nDil mein basa lo… to shayad dil ko karar aa jayega ❤️🎶\nSome songs don’t just pla"
     ],
-    "baseline_reach": 6715.9,
-    "baseline_views": 8041.9,
-    "baseline_engagement": 6.49,
-    "niche_signal_hits": 1150,
+    "baseline_reach": 6693.8,
+    "baseline_views": 8020.7,
+    "baseline_engagement": 6.51,
+    "niche_signal_hits": 1154,
     "niche_confidence": 100
   },
   "primary_recommendation": {
@@ -106,8 +106,8 @@
       "10–13s lyric/payoff",
       "13–15s seamless loop"
     ],
-    "posting_hour_local": 13,
-    "next_posting_at_ist": "2026-10-15T13:00:00+05:30",
+    "posting_hour_local": 8,
+    "next_posting_at_ist": "2026-10-16T08:00:00+05:30",
     "audio_note": "Use the official Instagram audio page and confirm the original/official sound is available for this account before publishing."
   },
   "trending_audio_ranked": [
@@ -126,10 +126,10 @@
       "observed_views": 2500000,
       "niche_score": 100,
       "current_signal": "high observed reel views",
-      "match_score": 86.8,
+      "match_score": 86.7,
       "account_track_signal": {
-        "matched_reels": 18,
-        "score": 34.0
+        "matched_reels": 19,
+        "score": 33.2
       },
       "discovery_score": 91.4
     },
@@ -214,10 +214,10 @@
       "observed_views": 525400,
       "niche_score": 100,
       "current_signal": "strong observed reel views",
-      "match_score": 82.8,
+      "match_score": 82.6,
       "account_track_signal": {
-        "matched_reels": 1,
-        "score": 18.8
+        "matched_reels": 2,
+        "score": 17.1
       },
       "discovery_score": 81.7
     },
@@ -305,7 +305,7 @@
       "match_score": 76.2,
       "account_track_signal": {
         "matched_reels": 5,
-        "score": 19.8
+        "score": 19.9
       },
       "discovery_score": 45.0
     },
@@ -446,7 +446,7 @@
     {
       "song": "Do Dil Mil Rahe Hai",
       "artist": "Kumar Sanu",
-      "score": 86.8,
+      "score": 86.7,
       "format": "90s nostalgia",
       "era": "1990s",
       "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
