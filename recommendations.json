@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-18T11:01:46.342916+00:00",
+  "generated_at": "2026-10-18T15:51:26.970236+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -53,29 +53,29 @@
     "best_hours": [
       {
         "hour": 13,
-        "score": 28531.7
+        "score": 28599.1
       },
       {
         "hour": 10,
-        "score": 14971.1
+        "score": 14972.6
       },
       {
         "hour": 12,
-        "score": 6912.1
+        "score": 6959.7
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 13845.3
+        "score": 13870.8
       },
       {
         "day": "Wednesday",
-        "score": 6389.9
+        "score": 6399.2
       },
       {
         "day": "Monday",
-        "score": 4354.9
+        "score": 4356.1
       }
     ],
     "top_captions": [
@@ -85,8 +85,8 @@
       "Pure retro magic in every frame. ✨ Sound on, feel the nostalgia! 🎶\n#EvergreenBollywood #OldSongs #Li",
       "Dil me basa lo ❤️ \n\nDil mein basa lo… to shayad dil ko karar aa jayega ❤️🎶\nSome songs don’t just pla"
     ],
-    "baseline_reach": 6774.0,
-    "baseline_views": 8113.5,
+    "baseline_reach": 6783.7,
+    "baseline_views": 8126.5,
     "baseline_engagement": 6.49,
     "niche_signal_hits": 1154,
     "niche_confidence": 100
@@ -129,7 +129,7 @@
       "match_score": 86.9,
       "account_track_signal": {
         "matched_reels": 21,
-        "score": 35.3
+        "score": 35.4
       },
       "discovery_score": 91.4
     },
@@ -151,7 +151,7 @@
       "match_score": 85.4,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 44.4
+        "score": 45.1
       },
       "discovery_score": 81.7
     },
@@ -305,7 +305,7 @@
       "match_score": 76.1,
       "account_track_signal": {
         "matched_reels": 6,
-        "score": 18.2
+        "score": 18.3
       },
       "discovery_score": 45.0
     },
@@ -371,7 +371,7 @@
       "match_score": 72.8,
       "account_track_signal": {
         "matched_reels": 1,
-        "score": 10.9
+        "score": 10.8
       },
       "discovery_score": 45.0
     },
@@ -393,7 +393,7 @@
       "match_score": 72.8,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 10.3
+        "score": 10.2
       },
       "discovery_score": 45.0
     },
