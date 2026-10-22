@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-22T17:09:06.401100+00:00",
+  "generated_at": "2026-10-22T21:34:25.344549+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -53,29 +53,29 @@
     "best_hours": [
       {
         "hour": 13,
-        "score": 29003.8
+        "score": 29008.9
       },
       {
         "hour": 10,
-        "score": 13579.8
+        "score": 13581.8
       },
       {
         "hour": 12,
-        "score": 7732.6
+        "score": 7750.0
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 14026.3
+        "score": 14028.4
       },
       {
         "day": "Wednesday",
-        "score": 6392.1
+        "score": 6403.5
       },
       {
         "day": "Monday",
-        "score": 4379.5
+        "score": 4380.1
       }
     ],
     "top_captions": [
@@ -85,8 +85,8 @@
       "Pure retro magic in every frame. ✨ Sound on, feel the nostalgia! 🎶\n#EvergreenBollywood #OldSongs #Li",
       "Dil me basa lo ❤️ \n\nDil mein basa lo… to shayad dil ko karar aa jayega ❤️🎶\nSome songs don’t just pla"
     ],
-    "baseline_reach": 6729.8,
-    "baseline_views": 8128.4,
+    "baseline_reach": 6738.0,
+    "baseline_views": 8132.2,
     "baseline_engagement": 6.62,
     "niche_signal_hits": 1170,
     "niche_confidence": 100
@@ -129,7 +129,7 @@
       "match_score": 86.9,
       "account_track_signal": {
         "matched_reels": 23,
-        "score": 35.6
+        "score": 35.7
       },
       "discovery_score": 91.4
     },
@@ -151,7 +151,7 @@
       "match_score": 86.4,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 54.5
+        "score": 54.7
       },
       "discovery_score": 81.7
     },
@@ -280,10 +280,10 @@
       "observed_views": 64200,
       "niche_score": 100,
       "current_signal": "observed reel views",
-      "match_score": 78.2,
+      "match_score": 78.3,
       "account_track_signal": {
         "matched_reels": 1,
-        "score": 5.4
+        "score": 6.2
       },
       "discovery_score": 68.7
     },
