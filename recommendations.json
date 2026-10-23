@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T04:46:57.394136+00:00",
+  "generated_at": "2026-10-23T11:36:01.088275+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -49,33 +49,33 @@
     "default_strategy": "Niche fit first, account performance second, current discovery signal third."
   },
   "sample": {
-    "sample_size": 137,
+    "sample_size": 138,
     "best_hours": [
       {
         "hour": 13,
-        "score": 29014.8
+        "score": 29029.4
       },
       {
         "hour": 10,
-        "score": 13582.7
+        "score": 13588.7
       },
       {
         "hour": 12,
-        "score": 7775.0
+        "score": 7797.8
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 14030.7
+        "score": 13342.3
       },
       {
         "day": "Wednesday",
-        "score": 6404.7
+        "score": 6409.3
       },
       {
         "day": "Monday",
-        "score": 4380.3
+        "score": 4381.2
       }
     ],
     "top_captions": [
@@ -85,10 +85,10 @@
       "Pure retro magic in every frame. ✨ Sound on, feel the nostalgia! 🎶\n#EvergreenBollywood #OldSongs #Li",
       "Dil me basa lo ❤️ \n\nDil mein basa lo… to shayad dil ko karar aa jayega ❤️🎶\nSome songs don’t just pla"
     ],
-    "baseline_reach": 6740.7,
-    "baseline_views": 8135.4,
-    "baseline_engagement": 6.61,
-    "niche_signal_hits": 1170,
+    "baseline_reach": 6704.3,
+    "baseline_views": 8092.6,
+    "baseline_engagement": 6.64,
+    "niche_signal_hits": 1192,
     "niche_confidence": 100
   },
   "primary_recommendation": {
@@ -106,8 +106,8 @@
       "10–13s lyric/payoff",
       "13–15s seamless loop"
     ],
-    "posting_hour_local": 12,
-    "next_posting_at_ist": "2026-10-23T12:00:00+05:30",
+    "posting_hour_local": 10,
+    "next_posting_at_ist": "2026-10-24T10:00:00+05:30",
     "audio_note": "Use the official Instagram audio page and confirm the original/official sound is available for this account before publishing."
   },
   "trending_audio_ranked": [
@@ -129,7 +129,7 @@
       "match_score": 86.9,
       "account_track_signal": {
         "matched_reels": 23,
-        "score": 35.7
+        "score": 35.9
       },
       "discovery_score": 91.4
     },
@@ -148,10 +148,10 @@
       "observed_views": 525400,
       "niche_score": 100,
       "current_signal": "strong observed reel views",
-      "match_score": 86.4,
+      "match_score": 86.5,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 54.8
+        "score": 55.4
       },
       "discovery_score": 81.7
     },
@@ -214,10 +214,10 @@
       "observed_views": 1100000,
       "niche_score": 100,
       "current_signal": "high observed reel views",
-      "match_score": 83.4,
+      "match_score": 83.5,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 13.7
+        "score": 13.8
       },
       "discovery_score": 86.3
     },
@@ -261,7 +261,7 @@
       "match_score": 80.5,
       "account_track_signal": {
         "matched_reels": 11,
-        "score": 12.1
+        "score": 12.2
       },
       "discovery_score": 75.3
     },
@@ -280,10 +280,10 @@
       "observed_views": 64200,
       "niche_score": 100,
       "current_signal": "observed reel views",
-      "match_score": 78.3,
+      "match_score": 78.4,
       "account_track_signal": {
         "matched_reels": 1,
-        "score": 6.7
+        "score": 7.4
       },
       "discovery_score": 68.7
     },
@@ -305,7 +305,7 @@
       "match_score": 76.2,
       "account_track_signal": {
         "matched_reels": 7,
-        "score": 19.1
+        "score": 19.2
       },
       "discovery_score": 45.0
     },
@@ -393,7 +393,7 @@
       "match_score": 72.8,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 10.3
+        "score": 10.4
       },
       "discovery_score": 45.0
     },
@@ -454,7 +454,7 @@
     {
       "song": "Kya Mausam Aaya Hai",
       "artist": "Sadhana Sargam, Udit Narayan",
-      "score": 86.4,
+      "score": 86.5,
       "format": "90s romance",
       "era": "1990s",
       "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
