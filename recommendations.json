@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-31T12:23:55.436788+00:00",
+  "generated_at": "2026-10-31T21:31:50.943740+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -49,33 +49,33 @@
     "default_strategy": "Niche fit first, account performance second, current discovery signal third."
   },
   "sample": {
-    "sample_size": 145,
+    "sample_size": 146,
     "best_hours": [
       {
         "hour": 13,
-        "score": 29199.8
+        "score": 29030.7
       },
       {
         "hour": 10,
-        "score": 11548.6
+        "score": 11601.0
       },
       {
         "hour": 12,
-        "score": 6728.2
+        "score": 6747.5
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 12251.5
+        "score": 12254.3
       },
       {
         "day": "Wednesday",
-        "score": 6296.1
+        "score": 6300.6
       },
       {
         "day": "Monday",
-        "score": 4385.5
+        "score": 4387.3
       }
     ],
     "top_captions": [
@@ -85,10 +85,10 @@
       "Pure retro magic in every frame. ✨ Sound on, feel the nostalgia! 🎶\n#EvergreenBollywood #OldSongs #Li",
       "Dil me basa lo ❤️ \n\nDil mein basa lo… to shayad dil ko karar aa jayega ❤️🎶\nSome songs don’t just pla"
     ],
-    "baseline_reach": 6590.1,
-    "baseline_views": 7980.6,
-    "baseline_engagement": 6.67,
-    "niche_signal_hits": 1231,
+    "baseline_reach": 6543.2,
+    "baseline_views": 7925.2,
+    "baseline_engagement": 6.65,
+    "niche_signal_hits": 1235,
     "niche_confidence": 100
   },
   "primary_recommendation": {
@@ -129,7 +129,7 @@
       "match_score": 87.1,
       "account_track_signal": {
         "matched_reels": 24,
-        "score": 37.7
+        "score": 37.4
       },
       "discovery_score": 91.4
     },
@@ -151,7 +151,7 @@
       "match_score": 86.6,
       "account_track_signal": {
         "matched_reels": 4,
-        "score": 56.5
+        "score": 57.1
       },
       "discovery_score": 81.7
     },
@@ -217,7 +217,7 @@
       "match_score": 83.5,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 14.0
+        "score": 14.1
       },
       "discovery_score": 86.3
     },
@@ -261,7 +261,7 @@
       "match_score": 80.6,
       "account_track_signal": {
         "matched_reels": 11,
-        "score": 12.4
+        "score": 12.5
       },
       "discovery_score": 75.3
     },
@@ -283,7 +283,7 @@
       "match_score": 78.8,
       "account_track_signal": {
         "matched_reels": 1,
-        "score": 11.2
+        "score": 11.4
       },
       "discovery_score": 68.7
     },
@@ -305,7 +305,7 @@
       "match_score": 76.3,
       "account_track_signal": {
         "matched_reels": 7,
-        "score": 20.1
+        "score": 20.2
       },
       "discovery_score": 45.0
     },
@@ -371,7 +371,7 @@
       "match_score": 72.9,
       "account_track_signal": {
         "matched_reels": 1,
-        "score": 11.1
+        "score": 11.2
       },
       "discovery_score": 45.0
     },
@@ -393,7 +393,7 @@
       "match_score": 72.8,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 10.5
+        "score": 10.6
       },
       "discovery_score": 45.0
     },
