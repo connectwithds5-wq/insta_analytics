@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-03T14:09:21.320531+00:00",
+  "generated_at": "2026-11-03T23:21:25.645317+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -49,33 +49,33 @@
     "default_strategy": "Niche fit first, account performance second, current discovery signal third."
   },
   "sample": {
-    "sample_size": 147,
+    "sample_size": 148,
     "best_hours": [
       {
         "hour": 13,
-        "score": 29246.0
+        "score": 29250.8
       },
       {
         "hour": 10,
-        "score": 11622.3
+        "score": 11624.7
       },
       {
         "hour": 12,
-        "score": 6831.0
+        "score": 6844.4
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 12273.7
+        "score": 12276.2
       },
       {
         "day": "Wednesday",
-        "score": 6325.1
+        "score": 6329.3
       },
       {
         "day": "Monday",
-        "score": 4213.5
+        "score": 4215.0
       }
     ],
     "top_captions": [
@@ -85,9 +85,9 @@
       "Pure retro magic in every frame. ✨ Sound on, feel the nostalgia! 🎶\n#EvergreenBollywood #OldSongs #Li",
       "Dil me basa lo ❤️ \n\nDil mein basa lo… to shayad dil ko karar aa jayega ❤️🎶\nSome songs don’t just pla"
     ],
-    "baseline_reach": 6531.2,
-    "baseline_views": 7915.0,
-    "baseline_engagement": 6.77,
+    "baseline_reach": 6490.7,
+    "baseline_views": 7868.7,
+    "baseline_engagement": 6.82,
     "niche_signal_hits": 1250,
     "niche_confidence": 100
   },
@@ -126,10 +126,10 @@
       "observed_views": 2500000,
       "niche_score": 100,
       "current_signal": "high observed reel views",
-      "match_score": 87.0,
+      "match_score": 86.9,
       "account_track_signal": {
-        "matched_reels": 25,
-        "score": 36.8
+        "matched_reels": 26,
+        "score": 35.7
       },
       "discovery_score": 91.4
     },
@@ -148,10 +148,10 @@
       "observed_views": 525400,
       "niche_score": 100,
       "current_signal": "strong observed reel views",
-      "match_score": 86.7,
+      "match_score": 86.8,
       "account_track_signal": {
         "matched_reels": 4,
-        "score": 57.9
+        "score": 58.4
       },
       "discovery_score": 81.7
     },
@@ -217,7 +217,7 @@
       "match_score": 83.5,
       "account_track_signal": {
         "matched_reels": 2,
-        "score": 14.1
+        "score": 14.2
       },
       "discovery_score": 86.3
     },
@@ -261,7 +261,7 @@
       "match_score": 80.5,
       "account_track_signal": {
         "matched_reels": 12,
-        "score": 11.7
+        "score": 11.8
       },
       "discovery_score": 75.3
     },
@@ -305,7 +305,7 @@
       "match_score": 76.3,
       "account_track_signal": {
         "matched_reels": 7,
-        "score": 20.3
+        "score": 20.5
       },
       "discovery_score": 45.0
     },
@@ -371,7 +371,7 @@
       "match_score": 72.9,
       "account_track_signal": {
         "matched_reels": 1,
-        "score": 11.2
+        "score": 11.3
       },
       "discovery_score": 45.0
     },
@@ -393,7 +393,7 @@
       "match_score": 72.8,
       "account_track_signal": {
         "matched_reels": 3,
-        "score": 10.6
+        "score": 10.7
       },
       "discovery_score": 45.0
     },
@@ -415,7 +415,7 @@
       "match_score": 72.0,
       "account_track_signal": {
         "matched_reels": 1,
-        "score": 2.8
+        "score": 3.0
       },
       "discovery_score": 45.0
     },
@@ -446,7 +446,7 @@
     {
       "song": "Do Dil Mil Rahe Hai",
       "artist": "Kumar Sanu",
-      "score": 87.0,
+      "score": 86.9,
       "format": "90s nostalgia",
       "era": "1990s",
       "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
@@ -454,7 +454,7 @@
     {
       "song": "Kya Mausam Aaya Hai",
       "artist": "Sadhana Sargam, Udit Narayan",
-      "score": 86.7,
+      "score": 86.8,
       "format": "90s romance",
       "era": "1990s",
       "test": "Keep the visual/story quality constant; test only the retro song + opening hook so reach can be attributed."
