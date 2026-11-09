@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T22:01:49.179257+00:00",
+  "generated_at": "2026-11-09T06:21:56.913487+00:00",
   "model": "retro-bollywood niche-aware deterministic ranking",
   "niche": {
     "mode": "retro_bollywood",
@@ -53,29 +53,29 @@
     "best_hours": [
       {
         "hour": 13,
-        "score": 29361.0
+        "score": 29363.0
       },
       {
         "hour": 10,
-        "score": 11639.4
+        "score": 11640.1
       },
       {
         "hour": 12,
-        "score": 7013.4
+        "score": 7023.3
       }
     ],
     "best_days": [
       {
         "day": "Friday",
-        "score": 11771.7
+        "score": 11772.8
       },
       {
         "day": "Wednesday",
-        "score": 6391.2
+        "score": 6392.4
       },
       {
         "day": "Monday",
-        "score": 4221.8
+        "score": 4222.0
       }
     ],
     "top_captions": [
@@ -85,9 +85,9 @@
       "Pure retro magic in every frame. ✨ Sound on, feel the nostalgia! 🎶\n#EvergreenBollywood #OldSongs #Li",
       "Dil me basa lo ❤️ \n\nDil mein basa lo… to shayad dil ko karar aa jayega ❤️🎶\nSome songs don’t just pla"
     ],
-    "baseline_reach": 6448.7,
-    "baseline_views": 7824.9,
-    "baseline_engagement": 6.85,
+    "baseline_reach": 6450.0,
+    "baseline_views": 7826.8,
+    "baseline_engagement": 6.86,
     "niche_signal_hits": 1250,
     "niche_confidence": 100
   },
@@ -106,8 +106,8 @@
       "10–13s lyric/payoff",
       "13–15s seamless loop"
     ],
-    "posting_hour_local": 10,
-    "next_posting_at_ist": "2026-11-09T10:00:00+05:30",
+    "posting_hour_local": 12,
+    "next_posting_at_ist": "2026-11-09T12:00:00+05:30",
     "audio_note": "Use the official Instagram audio page and confirm the original/official sound is available for this account before publishing."
   },
   "trending_audio_ranked": [
@@ -129,7 +129,7 @@
       "match_score": 86.9,
       "account_track_signal": {
         "matched_reels": 27,
-        "score": 35.1
+        "score": 35.2
       },
       "discovery_score": 91.4
     },
